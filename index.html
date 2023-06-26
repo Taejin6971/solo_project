@@ -13,10 +13,14 @@
         }
 
         header #main_logo {
-            border: 1px solid red;
+            /* border: 1px solid red; */
+            background-color: aquamarine;
+            position: relative;
+            float: left;
             height: 50px;
-            width: 50px;
-            margin: 10px;
+            width: 150px;
+            top: 20px;
+            left: 20px;
         }
 
         header #top_login {
@@ -29,8 +33,8 @@
         }
 
         header #main_menu {
-            border-top: 1px solid #444;
-            border-bottom: 1px solid #444;
+            /* border-top: 1px solid #444; */
+            /* border-bottom: 1px solid #444; */
             text-align: center;
         }
 
@@ -40,12 +44,17 @@
             margin: 20px 40px 20px 40px;
         }
 
-        main {
+        aside #second_menu {
+            border: 1px solid red;
+            float: left;
+        }
+
+        main div {
             border: 1px solid red;
         }
 
         footer {
-            border: 1px solid red;
+            /* border: 1px solid red; */
         }
     </style>
 </head>
@@ -54,29 +63,41 @@
     <div id="page">
         <header>
             <a href="#"><img id="main_logo" src=""></a>
-            <div id="top_login">
-                <ul>
-                    <li><a href="#">로그인 |</a></li>
-                    <li><a href="">장바구니 |</a></li>
-                    <li><a href="">마이페이지 |</a></li>
-                    <li><a href="">상품검색</a></li>
+            <div>
+                <ul id="top_login">
+                    <li><a href="#">LOGIN |</a></li>
+                    <li><a href="">MYCART |</a></li>
+                    <li><a href="">MTPAGE</a></li>
                 </ul>
-            </div>
-            <div class="clear"></div>
-            <div id="main_menu">
-                <ul>
-                    <li><a href="#">헬멧</a></li>
-                    <li><a href="#">자켓</a></li>
-                    <li><a href="#">바지</a></li>
-                    <li><a href="#">부츠</a></li>
-                    <li><a href="#">장갑</a></li>
-                    <li><a href="#">악세사리</a></li>
+                <div class="clear"></div>
+                <ul id="main_menu">
+                    <li><a href="#">HELMRT</a></li>
+                    <li><a href="#">JACKET</a></li>
+                    <li><a href="#">PANTS</a></li>
+                    <li><a href="#">BOOTS</a></li>
+                    <li><a href="#">GLOVES</a></li>
+                    <li><a href="#">ACC</a></li>
                 </ul>
             </div>
         </header>
 
+        <aside>
+            <div id="second_menu">
+                <ul>
+                    <li><a href="#">- HELMRT</a></li>
+                    <li><a href="#">- JACKET</a></li>
+                    <li><a href="#">- PANTS</a></li>
+                    <li><a href="#">- BOOTS</a></li>
+                    <li><a href="#">- GLOVES</a></li>
+                    <li><a href="#">- ACC</a></li>
+                </ul>
+            </div>
+        </aside>
+
         <main>
-             
+            <div>
+
+            </div>
         </main>
 
         <footer></footer>

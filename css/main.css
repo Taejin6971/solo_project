@@ -19,7 +19,7 @@ ul {
 }
 
 #page {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     width: 1300px;
     margin: auto;
 }
