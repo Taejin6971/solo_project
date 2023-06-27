@@ -57,8 +57,105 @@
             display: inline-block;
             font-size: 20px;
             font-weight: bold;
-            margin: 20px 40px 20px 40px;
+
+
+            /* margin: 20px 40px 20px 40px; */
         }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        header #menu {
+            /* width : 800px;  */
+            border: 1px solid red; 
+            overflow: hidden;
+            margin: 150px auto;
+            /* 중앙에 정렬 */
+        }
+
+        header #menu>li {
+            width: 16%;
+            /* 20% * 5 = 100%  (800px) */
+            float: left;
+            text-align: center;
+            line-height: 40px;
+            background-color: #5778ff;
+
+            /* border-radius: 25px; */
+        }
+
+        /* 링크 파일의 글자색을 흰색으로 처리: 후손 선택자  */
+
+        header #menu a {
+            color: white;
+        }
+
+        header #submenu>li {
+            line-height: 50px;
+            background-color: #94a9ff;
+        }
+
+        /* 기본 출력시 submenu는 화면에서 출력되면 안됨  */
+        header #submenu {
+            /* 높이가 0 이므로 출력되지 않음 */
+            height: 0;
+            /* 화면에 출력되지 않도록 한다. */
+            /* display : none;     */
+            /* visibility: visible; */
+            overflow: hidden;
+            /* 범위를 벗어나는 부분을 보이지 않도록 처리 */
+        }
+
+        header #menu>li:hover {
+            background-color: #94a9ff;
+            transition: 0.5s;
+        }
+
+        header #menu>li:hover #submenu {
+            height: 250px;
+            /* visibility: visible; */
+            transform: 0.5s;
+        }
+
+        header #main_menu #menu #submenu li {
+            font-size: 10px;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
         aside {
             /* float: left; */
@@ -234,13 +331,67 @@
                 <div class="clear"></div>
             </div>
             <div id="main_menu">
-                <ul>
-                    <li><a href="#">HELMRT</a></li>
-                    <li><a href="#">JACKET</a></li>
-                    <li><a href="#">PANTS</a></li>
-                    <li><a href="#">BOOTS</a></li>
-                    <li><a href="#">GLOVES</a></li>
-                    <li><a href="#">ACC</a></li>
+                <ul id="menu">
+                    <li>
+                        <a href="#">HELMRT</a>
+                        <ul id="submenu">
+                            <li><a href="#">오픈페이스</a></li>
+                            <li><a href="#">풀페이스</a></li>
+                            <li><a href="#">오프로드헬멧</a></li>
+                            <li><a href="#">시스템헬멧</a></li>
+                            <li><a href="#">헬멧 악세사리</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">JACKET</a>
+                        <ul id="submenu">
+                            <li><a href="#">여름용 자켓</a></li>
+                            <li><a href="#">겨울용 자켓</a></li>
+                            <li><a href="#">3계절용 자켓</a></li>
+                            <li><a href="#">가죽자켓</a></li>
+                            <li><a href="#">조끼</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">PANTS</a>
+                        <ul id="submenu">
+                            <li><a href="#">여름용 팬츠</a></li>
+                            <li><a href="#">겨울용 팬츠</a></li>
+                            <li><a href="#">3계절용 팬츠</a></li>
+                            <li><a href="#">가죽 팬츠</a></li>
+                            <li><a href="#">데님 팬츠</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">BOOTS</a>
+                        <ul id="submenu">
+                            <li><a href="#">레이싱용 부츠</a></li>
+                            <li><a href="#">라이딩용 부츠</a></li>
+                            <li><a href="#">투어링용 부츠</a></li>
+                            <li><a href="#">부츠악세사리</a></li>
+                            <li><a href="#"></a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">GLOVES</a>
+                        <ul id="submenu">
+                            <li><a href="#">봄/가을 글러브</a></li>
+                            <li><a href="#">여름용 글러브</a></li>
+                            <li><a href="#">겨울용 글러브</a></li>
+                            <li><a href="#">롱 글러브</a></li>
+                            <li><a href="#">이너 글러브</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">ACC</a>
+                        <ul id="submenu">
+                            <li><a href="#">보호대</a></li>
+                            <li><a href="#">고글</a></li>
+                            <li><a href="#">레인웨어(우비)</a></li>
+                            <li><a href="#">가방</a></li>
+                            <li><a href="#">방한용품</a></li>
+                        </ul>
+                    </li>
                 </ul>
             </div>
         </header>
