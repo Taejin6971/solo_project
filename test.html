@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="css/main.css">
     <title>main_page</title>
 
     <style>
@@ -40,7 +40,11 @@
             padding: 2px;
         }
 
-        header #main_menu {
+
+
+
+
+        header #main_box {
             /* border: 1px solid red; */
             /* border-top: 1px solid #444; */
             border-bottom: 1px solid #444;
@@ -48,42 +52,23 @@
             /* margin-top: 20px; */
         }
 
-        header #main_menu ul {
+        header #main_box ul {
             /* border: 1px solid red; */
             /* margin-right: 150px;/ */
         }
 
-        header #main_menu li {
-            display: inline-block;
+        header #main_box li {
+            /* display: inline-block;
             font-size: 20px;
             font-weight: bold;
-
-
-            /* margin: 20px 40px 20px 40px; */
+            margin: 20px 40px 20px 40px; */
         }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         header #menu {
-            /* width : 800px;  */
-            border: 1px solid red; 
+            /* width: 800px; */
+            /* border: 1px solid red;  */
             overflow: hidden;
-            margin: 150px auto;
+            /* margin: 150px auto; */
             /* 중앙에 정렬 */
         }
 
@@ -93,24 +78,22 @@
             float: left;
             text-align: center;
             line-height: 40px;
+            /* 라인과 라인의 간격 */
             background-color: #888;
 
             /* border-radius: 25px; */
         }
 
-        /* 링크 파일의 글자색을 흰색으로 처리: 후손 선택자  */
-
         header #menu a {
-            /* color: white; */
+            color: white;
         }
 
-        header #submenu>li {
+        header #menu #submenu>li {
             line-height: 50px;
             background-color: #888;
         }
 
-        /* 기본 출력시 submenu는 화면에서 출력되면 안됨  */
-        header #submenu {
+        header #menu #submenu {
             /* 높이가 0 이므로 출력되지 않음 */
             height: 0;
             /* 화면에 출력되지 않도록 한다. */
@@ -122,34 +105,14 @@
 
         header #menu>li:hover {
             background-color: #888;
-            transition: 0.5s;
+            /* transition: 2s; */
         }
 
         header #menu>li:hover #submenu {
             height: 250px;
             /* visibility: visible; */
-            transform: 0.5s;
+            /* transform: 2s; */
         }
-
-        header #main_menu #menu #submenu li {
-            font-size: 10px;
-        }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -178,7 +141,7 @@
 
         aside #kakao {
             /* border: 1px solid red; */
-            background: url(../img/kakao_benner.png) no-repeat;
+            background: url(img/kakao_benner.png) no-repeat;
             background-size: 220px;
             height: 60px;
             /* width: 235px; */
@@ -188,7 +151,7 @@
 
         aside #facebook {
             /* border: 1px solid red; */
-            background: url(../img/facebook_benner.png) no-repeat;
+            background: url(img/facebook_benner.png) no-repeat;
             background-size: 220px;
             height: 60px;
             /* width: 235px; */
@@ -318,7 +281,7 @@
     <div id="page">
         <header>
             <div id="main_logo">
-                <a href="#"><img src="../img/main_logo.png"></a>
+                <a href="#"><img src="img/main_logo.png"></a>
             </div>
             <div id="top_login">
                 <ul>
@@ -330,10 +293,10 @@
                 </ul>
                 <div class="clear"></div>
             </div>
-            <div id="main_menu">
+            <div id="main_box">
                 <ul id="menu">
                     <li>
-                        <a href="#">HELMRT</a>
+                        <a href="#">HELMET</a>
                         <ul id="submenu">
                             <li><a href="#">오픈페이스</a></li>
                             <li><a href="#">풀페이스</a></li>
@@ -401,7 +364,7 @@
         <aside>
             <div id="second_menu">
                 <ul>
-                    <li><a href="#">- HELMRT</a></li>
+                    <li><a href="#">- HELMET</a></li>
                     <li><a href="#">- JACKET</a></li>
                     <li><a href="#">- PANTS</a></li>
                     <li><a href="#">- BOOTS</a></li>
@@ -427,7 +390,7 @@
 
         <main>
             <div id="main_benner">
-                <a href="#"><img src="../img/main_benner.png"></a>
+                <a href="#"><img src="img/main_benner.png"></a>
                 <div class="clear"></div>
             </div>
         </main>
@@ -446,7 +409,7 @@
                 </ul>
             </div>
             <div id="info2">
-                <div><img src="../img/call_info.png"></div>
+                <div><img src="img/call_info.png"></div>
                 <div id="call_num"><span>02)</span> 123-456</div>
                 <div id="footer_menu">
                     <ul>
@@ -474,7 +437,7 @@
             </div>
             <div id="info4">
                 <div id="footer_logo">
-                    <img src="../img/footer_logo.png">
+                    <img src="img/footer_logo.png">
                 </div>
                 <div id="compeny_info">
                     <ul>
@@ -490,7 +453,7 @@
                     </ul>
                 </div>
                 <div id="footer_benner">
-                    <img src="../img/footer_benner.png">
+                    <img src="img/footer_benner.png">
                 </div>
                 <div class="clear"></div>
             </div>
@@ -501,7 +464,7 @@
             <div id="footer_map">
                 <a href="https://map.naver.com/v5/entry/place/13322326?lng=126.9872293&lat=37.5719027&placePath=%2Fhome%3Fentry=plt&c=15,0,0,0,dh"
                     target="_blank">
-                    <img src="../img/footer_map.png"></a>
+                    <img src="img/footer_map.png"></a>
             </div>
         </footer>
     </div>
