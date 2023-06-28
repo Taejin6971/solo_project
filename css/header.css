@@ -1,0 +1,101 @@
+header #header {
+    /* border: 1px solid red; */
+    /* position: fixed; */
+    background-color: white;
+    width: 1300px;
+    position: absolute;
+}
+
+header #main_logo {
+    /* border: 1px solid red; */
+}
+
+header #main_logo img {
+    /* border: 1px solid red; */
+    /* position: relative; */
+    float: left;
+    height: 60px;
+    width: 230px;
+    margin: 10px;
+    /* margin-top: 20px; */
+    /* top: 35px; */
+    /* left: 20px; */
+}
+
+header #top_login {
+    /* border: 1px solid red; */
+    /* float: right; */
+    /* margin: 10px; */
+    text-align: right;
+}
+
+header #top_login li {
+    display: inline-block;
+    padding: 2px;
+}
+
+header #main_box {
+    /* border: 1px solid red; */
+    /* border-top: 1px solid #444; */
+    border-bottom: 1px solid #444;
+    text-align: center;
+    /* margin-top: 20px; */
+}
+
+header #main_box ul {
+    /* border: 1px solid red; */
+    /* margin-right: 150px;/ */
+}
+
+header #main_box li {
+    /* display: inline-block;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 20px 40px 20px 40px; */
+}
+
+header #menu {
+    /* width: 800px; */
+    /* border: 1px solid red;  */
+    overflow: hidden;
+    /* margin: 150px auto; */
+    padding-bottom: 10px;
+}
+
+header #menu>li {
+    width: 16.66%;
+    /* 20% * 5 = 100%  (800px) */
+    float: left;
+    text-align: center;
+    line-height: 40px;
+    /* background-color: #888; */
+    font-size: 20px;
+    /* border-radius: 25px; */
+}
+
+header #menu a {
+    /* color: white; */
+}
+
+header #menu #submenu>li {
+    /* line-height: 50px; */
+    font-size: 12px;
+    /* background-color: #888; */
+}
+
+header #menu #submenu {
+    height: 0;
+    /* display : none;     */
+    /* visibility: visible; */
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+header #menu>li:hover {
+    /* background-color: #888; */
+}
+
+header #menu>li:hover #submenu {
+    height: 200px;
+    /* visibility: visible; */
+}

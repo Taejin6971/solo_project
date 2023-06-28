@@ -5,9 +5,9 @@
 }
 
 body {
-    font-family:"맑은 고딕", "돋움";
-    font-size:12px;
-    color:#444;
+    font-family: "맑은 고딕", "돋움";
+    font-size: 12px;
+    color: #444;
 }
 
 ul {
@@ -16,6 +16,11 @@ ul {
 
 .clear {
     clear: both;
+}
+
+.line {
+    /* margin-top: 380px; */
+    border-top: 1px solid #888;
 }
 
 #page {

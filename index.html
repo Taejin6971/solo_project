@@ -4,215 +4,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/page.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/asice.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/footer.css">
     <title>main_page</title>
 
     <style>
-        header {
+        main #main {
             /* border: 1px solid red; */
-        }
-
-        header #main_logo {
-            /* border: 1px solid red; */
-        }
-
-        header #main_logo img {
-            /* border: 1px solid red; */
-            /* position: relative; */
-            float: left;
-            height: 60px;
-            width: 230px;
-            margin: 10px;
-            /* margin-top: 20px; */
-            /* top: 35px; */
-            /* left: 20px; */
-        }
-
-        header #top_login {
-            /* border: 1px solid red; */
-            /* float: right; */
-            /* margin: 10px; */
-            text-align: right;
-        }
-
-        header #top_login li {
-            display: inline-block;
-            padding: 2px;
-        }
-
-        header #main_menu {
-            /* border: 1px solid red; */
-            /* border-top: 1px solid #444; */
-            border-bottom: 1px solid #444;
-            text-align: center;
-            /* margin-top: 20px; */
-        }
-
-        header #main_menu ul {
-            /* border: 1px solid red; */
-            /* margin-right: 150px;/ */
-        }
-
-        header #main_menu li {
-            display: inline-block;
-            font-size: 20px;
-            font-weight: bold;
-            margin: 20px 40px 20px 40px;
-        }
-
-        aside {
-            /* float: left; */
-            /* position: fixed; */
-            float: left;
-            width: 220px;
-        }
-
-        aside #second_menu ul {
-            background-color: white;
-            /* border: 1px solid red; */
-            padding: 30px;
-            font-size: 20px;
-            line-height: 40px;
-        }
-
-        aside #second_benner {
-            /* border: 1px solid red; */
-        }
-
-        aside #kakao {
-            /* border: 1px solid red; */
-            background: url(img/kakao_benner.png) no-repeat;
-            background-size: 220px;
-            height: 60px;
-            /* width: 235px; */
-            padding: 10px 0 0 50px;
-            font-weight: bold;
-        }
-
-        aside #facebook {
-            /* border: 1px solid red; */
-            background: url(img/facebook_benner.png) no-repeat;
-            background-size: 220px;
-            height: 60px;
-            /* width: 235px; */
-            padding: 10px 0 0 50px;
-            font-weight: bold;
-            color: white;
-        }
-
-        main div {
-            /* border: 1px solid red; */
-            /* float: right; */
-            /* width: 1108px; */
-            height: 1000px
+            float: right;
+            width: 1075px;
+            /* height: 1000px */
+            padding-top: 130px;
         }
 
         main #main_benner img {
-            float: right;
-            width: 80%;
+            /* float: right; */
+            width: 100%;
             margin-top: 5px
         }
 
-        footer {
-            height: 200px;
-            /* background-color: #888; */
-        }
-
-        footer #info {
+        main #new_products_box,
+        main #review_best_box {
             /* border: 1px solid red; */
-            text-align: center;
-            padding: 10px;
         }
 
-        footer #info li {
-            display: inline-block;
-            text-align: center;
-            margin-left: 10px;
-        }
-
-        footer #info2 {
-            /* border: 1px solid red; */
-            border-top: 1px solid #444;
-            border-bottom: 1px solid #444;
-
-        }
-
-        footer #info2 img {
-            /* border: 1px solid red; */
+        main #new_products_box #new_products,
+        main #review_best_box #review_best {
+            padding: 5px 0 5px 0;
+            font-size: 15px;
             float: left;
-            padding: 30px 0 0 10px;
         }
 
-        footer #info2 #call_num {
-            /* border: 1px solid red; */
-            float: left;
-            font-size: 50px;
-            font-weight: bold;
-            padding: 10px 0 15px 180px;
-        }
-
-        footer #info2 #call_num span {
+        main #new_products_box #new_products #new_products_text,
+        main #review_best_box #review_best #review_best_text {
             color: red;
         }
 
-        footer #info2 #footer_menu {
-            /* border: 1px solid red; */
+        #main #more {
             float: right;
-            padding: 35px 10px 0 0;
+            padding-top: 10px;
+            font-size: 15px;
         }
 
-        footer #info2 #footer_menu li {
-            /* border: 1px solid red; */
-            display: inline-block;
+        #main #item_box {
+            padding: 20px;
         }
 
-        footer #info3 {
-            text-align: center;
-            padding: 10px;
-        }
-
-        footer #info3 li {
-            display: inline-block;
-            padding: 2px;
-        }
-
-        footer #info4 #footer_logo img {
+        #main #item {
             float: left;
-            height: 100px;
-            width: 350px;
-            margin: 10px;
+            margin: 0 39px 10px 39px;
         }
 
-        footer #info4 #compeny_info {
-            float: left;
-            padding-left: 100px;
-            text-align: center;
-            line-height: 20px;
+        #main #item img {
+            width: 180px;
         }
 
-        footer #info4 #compeny_info li {
-            /* display: inline-block; */
+        #main #item_name,
+        #main #item_info,
+        #main #item_price {
+            /* text-align: center; */
         }
 
-        footer #info4 #footer_benner img {
-            float: right;
-            width: 250px;
-            margin: 20px;
-        }
-
-        footer #info5 {
-            text-align: center;
-            padding: 10px;
-            font-size: 13px;
-        }
-
-        footer #info5 span {
+        #main #item_info {
+            /* color: green; */
             font-weight: bold;
         }
 
-        footer #footer_map img {
-            text-align: center;
-            width: 100%;
+        #main #item_price {
+            font-weight: bold;
+            color: rgb(50, 50, 253);
         }
     </style>
 </head>
@@ -220,139 +83,438 @@
 <body>
     <div id="page">
         <header>
-            <div id="main_logo">
-                <a href="#"><img src="img/main_logo.png"></a>
-            </div>
-            <div id="top_login">
-                <ul>
-                    <li><a href="#">LOGIN</a></li>
-                    <li>|</li>
-                    <li><a href="">MYCART</a></li>
-                    <li>|</li>
-                    <li><a href="">MTPAGE</a></li>
-                </ul>
-                <div class="clear"></div>
-            </div>
-            <div id="main_menu">
-                <ul>
-                    <li><a href="#">HELMRT</a></li>
-                    <li><a href="#">JACKET</a></li>
-                    <li><a href="#">PANTS</a></li>
-                    <li><a href="#">BOOTS</a></li>
-                    <li><a href="#">GLOVES</a></li>
-                    <li><a href="#">ACC</a></li>
-                </ul>
+            <div id="header">
+                <div id="main_logo">
+                    <a href="#"><img src="img/main_logo.png"></a>
+                </div>
+                <div id="top_login">
+                    <ul>
+                        <li><a href="#">LOGIN</a></li>
+                        <li>|</li>
+                        <li><a href="">MYCART</a></li>
+                        <li>|</li>
+                        <li><a href="">MTPAGE</a></li>
+                    </ul>
+                    <div class="clear"></div>
+                </div>
+                <div id="main_box">
+                    <ul id="menu">
+                        <li>
+                            <a href="#">HELMET</a>
+                            <ul id="submenu">
+                                <li><a href="#">오픈페이스</a></li>
+                                <li><a href="#">풀페이스</a></li>
+                                <li><a href="#">오프로드헬멧</a></li>
+                                <li><a href="#">시스템헬멧</a></li>
+                                <li><a href="#">헬멧 악세사리</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">JACKET</a>
+                            <ul id="submenu">
+                                <li><a href="#">여름용 자켓</a></li>
+                                <li><a href="#">겨울용 자켓</a></li>
+                                <li><a href="#">3계절용 자켓</a></li>
+                                <li><a href="#">가죽자켓</a></li>
+                                <li><a href="#">조끼</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">PANTS</a>
+                            <ul id="submenu">
+                                <li><a href="#">여름용 팬츠</a></li>
+                                <li><a href="#">겨울용 팬츠</a></li>
+                                <li><a href="#">3계절용 팬츠</a></li>
+                                <li><a href="#">가죽 팬츠</a></li>
+                                <li><a href="#">데님 팬츠</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">BOOTS</a>
+                            <ul id="submenu">
+                                <li><a href="#">레이싱용 부츠</a></li>
+                                <li><a href="#">라이딩용 부츠</a></li>
+                                <li><a href="#">투어링용 부츠</a></li>
+                                <li><a href="#">부츠악세사리</a></li>
+                                <li><a href="#"></a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">GLOVES</a>
+                            <ul id="submenu">
+                                <li><a href="#">봄/가을 글러브</a></li>
+                                <li><a href="#">여름용 글러브</a></li>
+                                <li><a href="#">겨울용 글러브</a></li>
+                                <li><a href="#">롱 글러브</a></li>
+                                <li><a href="#">이너 글러브</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">ACC</a>
+                            <ul id="submenu">
+                                <li><a href="#">보호대</a></li>
+                                <li><a href="#">고글</a></li>
+                                <li><a href="#">레인웨어(우비)</a></li>
+                                <li><a href="#">가방</a></li>
+                                <li><a href="#">방한용품</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </header>
 
         <div class="clear"></div>
 
         <aside>
-            <div id="second_menu">
-                <ul>
-                    <li><a href="#">- HELMRT</a></li>
-                    <li><a href="#">- JACKET</a></li>
-                    <li><a href="#">- PANTS</a></li>
-                    <li><a href="#">- BOOTS</a></li>
-                    <li><a href="#">- GLOVES</a></li>
-                    <li><a href="#">- ACC</a></li>
-                </ul>
-            </div>
-            <div id="second_benner">
-                <a href="">
-                    <div id="kakao">
-                        <div>Tjmoto kakao<span>tlak</span></div>
-                        <div>티제이모토 카카오톡</div>
+            <div id="aside">
+                <div class="faq-content">
+                    <button class="question" id="que-1"><span id="que-1-toggle">+</span><span>HELMET</span></button>
+                    <div class="answer" id="ans-1">
+                        <ul id="asid_menu">
+                            <li><a href="#">오픈페이스</a></li>
+                            <li><a href="#">풀페이스</a></li>
+                            <li><a href="#">오프로드헬멧</a></li>
+                            <li><a href="#">시스템헬멧</a></li>
+                            <li><a href="#">헬멧 악세사리</a></li>
+                        </ul>
                     </div>
-                </a>
-                <a href="#">
-                    <div id="facebook">
-                        <div>Tjmoto facebook</div>
-                        <div>티제이모토 페이스북</div>
+                </div>
+                <div class="faq-content">
+                    <button class="question" id="que-2"><span id="que-2-toggle">+</span><span>JACKET</span></button>
+                    <div class="answer" id="ans-2">
+                        <ul id="asid_menu">
+                            <li><a href="#">여름용 자켓</a></li>
+                            <li><a href="#">겨울용 자켓</a></li>
+                            <li><a href="#">3계절용 자켓</a></li>
+                            <li><a href="#">가죽자켓</a></li>
+                            <li><a href="#">조끼</a></li>
+                        </ul>
                     </div>
-                </a>
+                </div>
+                <div class="faq-content">
+                    <button class="question" id="que-3"><span id="que-3-toggle">+</span><span>PANTS</span></button>
+                    <div class="answer" id="ans-3">
+                        <ul id="asid_menu">
+                            <li><a href="#">여름용 팬츠</a></li>
+                            <li><a href="#">겨울용 팬츠</a></li>
+                            <li><a href="#">3계절용 팬츠</a></li>
+                            <li><a href="#">가죽 팬츠</a></li>
+                            <li><a href="#">데님 팬츠</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="faq-content">
+                    <button class="question" id="que-4"><span id="que-4-toggle">+</span><span>BOOTS</span></button>
+                    <div class="answer" id="ans-4">
+                        <ul id="asid_menu">
+                            <li><a href="#">레이싱용 부츠</a></li>
+                            <li><a href="#">라이딩용 부츠</a></li>
+                            <li><a href="#">투어링용 부츠</a></li>
+                            <li><a href="#">부츠악세사리</a></li>
+                            <li><a href="#"></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="faq-content">
+                    <button class="question" id="que-5"><span id="que-5-toggle">+</span><span>GLOVES</span></button>
+                    <div class="answer" id="ans-5">
+                        <ul id="asid_menu">
+                            <li><a href="#">봄/가을 글러브</a></li>
+                            <li><a href="#">여름용 글러브</a></li>
+                            <li><a href="#">겨울용 글러브</a></li>
+                            <li><a href="#">롱 글러브</a></li>
+                            <li><a href="#">이너 글러브</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="faq-content">
+                    <button class="question" id="que-6"><span id="que-6-toggle">+</span><span>ACC</span></button>
+                    <div class="answer" id="ans-6">
+                        <ul id="asid_menu">
+                            <li><a href="#">보호대</a></li>
+                            <li><a href="#">고글</a></li>
+                            <li><a href="#">레인웨어(우비)</a></li>
+                            <li><a href="#">가방</a></li>
+                            <li><a href="#">방한용품</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="faq-content">
+                    <button class="question" id="que-7"><span id="que-7-toggle"></span><span><a
+                                href="#">Q&A</a></span></button>
+                </div>
+                <div id="second_benner">
+                    <a href="">
+                        <div id="kakao">
+                            <div>Tjmoto kakao<span>tlak</span></div>
+                            <div>티제이모토 카카오톡</div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div id="facebook">
+                            <div>Tjmoto facebook</div>
+                            <div>티제이모토 페이스북</div>
+                        </div>
+                    </a>
+                </div>
             </div>
         </aside>
 
         <main>
-            <div id="main_benner">
-                <a href="#"><img src="img/main_benner.png"></a>
-                <div class="clear"></div>
-            </div>
+            <div id="main">
+                <div id="main_benner">
+                    <a href="#"><img src="img/main_benner.png"></a>
+                    <div class="clear"></div>
+                </div>
+                <div id="new_products_box">
+                    <div>
+                        <div id="new_products">
+                            <span id="new_products_text">NEW PRODUCTS</span> <span>신규 상품</span>
+                        </div>
+                        <div id="more"><a href="#">more</a></div>
+                        <div class="clear"></div>
+                        <div class="line"></div>
+                    </div>
+                    <div id="item_box">
+                        <a href="#">
+                            <div id="item">
+                                <img id="item_img" src="img/item/item04.png">
+                                <div id="item_name">넥스헬멧</div>
+                                <div id="item_info">X. WED 2 CARBON VALL</div>
+                                <div id="item_price">270,000원</div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div id="item">
+                                <img id="item_img" src="img/item/item13.png">
+                                <div id="item_name">넥스헬멧</div>
+                                <div id="item_info">SX. 100R FRENTIC</div>
+                                <div id="item_price">20,000원</div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div id="item">
+                                <img id="item_img" src="img/item/item01.png">
+                                <div id="item_name">홍진헬멧</div>
+                                <div id="item_info">V10 SOLID</div>
+                                <div id="item_price">369,000원</div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div id="item">
+                                <img id="item_img" src="img/item/item02.png">
+                                <div id="item_name">알파인스타자켓</div>
+                                <div id="item_info">T-GP PLUS R V3 </div>
+                                <div id="item_price">360,000원</div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div id="item">
+                                <img id="item_img" src="img/item/item05.png">
+                                <div id="item_name">RS타이치장갑</div>
+                                <div id="item_info">RST448 ARMED MESH</div>
+                                <div id="item_price">119,000원</div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div id="item">
+                                <img id="item_img" src="img/item/item03.png">
+                                <div id="item_name">알파인스타자켓</div>
+                                <div id="item_info">SMX-R SHORT GLOVES</div>
+                                <div id="item_price">120,000원</div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div id="item">
+                                <img id="item_img" src="img/item/item06.png">
+                                <div id="item_name">어글리브로스바지</div>
+                                <div id="item_info">MOTO JOGGER</div>
+                                <div id="item_price">216,000원</div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div id="item">
+                                <img id="item_img" src="img/item/item09.png">
+                                <div id="item_name">RS타이치장갑</div>
+                                <div id="item_info">RSU099 GRAFFII1</div>
+                                <div id="item_price">35,000원</div>
+                            </div>
+                        </a>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+                <div id="review_best_box">
+                    <div>
+                        <div id="review_best">
+                            <span id="review_best_text">REVIEW BEST</span> <span>인기 상품</span>
+                        </div>
+                        <div id="more"><a href="#">more</a></div>
+                        <div class="clear"></div>
+                        <div class="line"></div>
+                    </div>
+                    <div id="item_box">
+                        <a href="#">
+                            <div id="item">
+                                <img id="item_img" src="img/item/item001.png">
+                                <div id="item_name">홍진헬멧</div>
+                                <div id="item_info">I30 VICOM</div>
+                                <div id="item_price">199,000원</div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div id="item">
+                                <img id="item_img" src="img/item/item002.png">
+                                <div id="item_name">세나블루투스</div>
+                                <div id="item_info">50S-10 싱글팩</div>
+                                <div id="item_price">473,000원</div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div id="item">
+                                <img id="item_img" src="img/item/item003.png">
+                                <div id="item_name">다이네즈자켓</div>
+                                <div id="item_info">HYDRAFLUX 2 AIR</div>
+                                <div id="item_price">440,000원</div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div id="item">
+                                <img id="item_img" src="img/item/item004.png">
+                                <div id="item_name">알파인스타자켓</div>
+                                <div id="item_info">T-SP S SUPERAIR</div>
+                                <div id="item_price">260,000원</div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div id="item">
+                                <img id="item_img" src="img/item/item005.png">
+                                <div id="item_name">랩마운트</div>
+                                <div id="item_info">RAM-B-149-PDA</div>
+                                <div id="item_price">75,000원</div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div id="item">
+                                <img id="item_img" src="img/item/item006.png">
+                                <div id="item_name">랩마운트</div>
+                                <div id="item_info">RAM-B-408-37-PDA</div>
+                                <div id="item_price">82,000원</div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div id="item">
+                                <img id="item_img" src="img/item/item007.png">
+                                <div id="item_name">알파인스타장갑</div>
+                                <div id="item_info">STELLA SMX-1 AIR V2</div>
+                                <div id="item_price">91,000원</div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div id="item">
+                                <img id="item_img" src="img/item/item008.png">
+                                <div id="item_name">알파인스타장갑</div>
+                                <div id="item_info">MM93 RIO HONDO V2</div>
+                                <div id="item_price">110,000원</div>
+                            </div>
+                        </a>
+                        <div class="clear"></div>
+                    </div>
+                </div>
         </main>
 
         <div class="clear"></div>
 
         <footer>
-            <div id="info">
-                <ul>
-                    <li><span>입금계좌안내: </span><b>신한은행 123-456-777777</b></li>
-                    <li>|</li>
-                    <li><b>국민은행 987654-01-234567</b></li>
-                    <li>|</li>
-                    <li><b>농협 456-01-123456</b></li>
-                    <li>예금주: <b>(주)티제이모토</b></li>
-                </ul>
-            </div>
-            <div id="info2">
-                <div><img src="img/call_info.png"></div>
-                <div id="call_num"><span>02)</span> 123-456</div>
-                <div id="footer_menu">
+            <div id="footer">
+                <div id="info">
                     <ul>
-                        <li><a href="#">공지사항</a></li>
+                        <li><span>입금계좌안내: </span><b>신한은행 123-456-777777</b></li>
                         <li>|</li>
-                        <li><a href="#">질문과답변</a></li>
+                        <li><b>국민은행 987654-01-234567</b></li>
                         <li>|</li>
-                        <li><a href="#">상품사용후기</a></li>
+                        <li><b>농협 456-01-123456</b></li>
+                        <li>예금주: <b>(주)티제이모토</b></li>
                     </ul>
                 </div>
-                <div class="clear"></div>
-            </div>
-            <div id="info3">
-                <ul>
-                    <li><a href="#">홈</a></li>
-                    <li>|</li>
-                    <li><a href="#">회사소개</a></li>
-                    <li>|</li>
-                    <li><a href="#">이용약관</a></li>
-                    <li>|</li>
-                    <li><a href="#">개인정보처리방침</a></li>
-                    <li>|</li>
-                    <li><a href="#">이용안내</a></li>
-                </ul>
-            </div>
-            <div id="info4">
-                <div id="footer_logo">
-                    <img src="img/footer_logo.png">
+                <div id="info2">
+                    <div><img src="img/call_info.png"></div>
+                    <div id="call_num"><span>02)</span> 123-456</div>
+                    <div id="footer_menu">
+                        <ul>
+                            <li><a href="#">공지사항</a></li>
+                            <li>|</li>
+                            <li><a href="#">질문과답변</a></li>
+                            <li>|</li>
+                            <li><a href="#">상품사용후기</a></li>
+                        </ul>
+                    </div>
+                    <div class="clear"></div>
                 </div>
-                <div id="compeny_info">
+                <div id="info3">
                     <ul>
-                        <li>법인명(상호) : (주) 티제이모토</li>
-                        <li>대표자(성명) : 김태진</li>
-                        <li>주소 : 서울특별시 종로구 인사동 43 대일빌딩 15층 ( 인사동길 12 )</li>
-                        <li>사업자 등록번호 안내 : [123-45-67890]</li>
-                        <li>통신판맹버 신고 : 2023-서울종로-0627</li>
-                        <li><a href="#">[사업자정보확인]</a></li>
-                        <li>전화 : 02-1234-5678</li>
-                        <li>팩스 : 02-1234-5678</li>
-                        <li>개인정보보호책임자 : 김태진(help@tjmoto.co.kr)</li>
+                        <li><a href="#">홈</a></li>
+                        <li>|</li>
+                        <li><a href="#">회사소개</a></li>
+                        <li>|</li>
+                        <li><a href="#">이용약관</a></li>
+                        <li>|</li>
+                        <li><a href="#">개인정보처리방침</a></li>
+                        <li>|</li>
+                        <li><a href="#">이용안내</a></li>
                     </ul>
                 </div>
-                <div id="footer_benner">
-                    <img src="img/footer_benner.png">
+                <div id="info4">
+                    <div id="footer_logo">
+                        <img src="img/footer_logo.png">
+                    </div>
+                    <div id="compeny_info">
+                        <ul>
+                            <li>법인명(상호) : (주) 티제이모토</li>
+                            <li>대표자(성명) : 김태진</li>
+                            <li>주소 : 서울특별시 종로구 인사동 43 대일빌딩 15층 ( 인사동길 12 )</li>
+                            <li>사업자 등록번호 안내 : [123-45-67890]</li>
+                            <li>통신판맹버 신고 : 2023-서울종로-0627</li>
+                            <li><a href="#">[사업자정보확인]</a></li>
+                            <li>전화 : 02-1234-5678</li>
+                            <li>팩스 : 02-1234-5678</li>
+                            <li>개인정보보호책임자 : 김태진(help@tjmoto.co.kr)</li>
+                        </ul>
+                    </div>
+                    <div id="footer_benner">
+                        <img src="img/footer_benner.png">
+                    </div>
+                    <div class="clear"></div>
                 </div>
-                <div class="clear"></div>
-            </div>
-            <div id="info5">
-                Copylight @ 2023 티제이모토 All rights reserved. <br>
-                Contac <span>help@tjmoto.co.kr</span> for more information
-            </div>
-            <div id="footer_map">
-                <a href="https://map.naver.com/v5/entry/place/13322326?lng=126.9872293&lat=37.5719027&placePath=%2Fhome%3Fentry=plt&c=15,0,0,0,dh"
-                    target="_blank">
-                    <img src="img/footer_map.png"></a>
+                <div id="info5">
+                    Copylight @ 2023 티제이모토 All rights reserved. <br>
+                    Contac <span>help@tjmoto.co.kr</span> for more information
+                </div>
+                <div id="footer_map">
+                    <a href="https://map.naver.com/v5/entry/place/13322326?lng=126.9872293&lat=37.5719027&placePath=%2Fhome%3Fentry=plt&c=15,0,0,0,dh"
+                        target="_blank">
+                        <img src="img/footer_map.png"></a>
+                </div>
             </div>
         </footer>
+
+        <script>
+            const items = document.querySelectorAll('.question');
+
+            function openCloseAnswer() {
+                const answerId = this.id.replace('que', 'ans');
+
+                if (document.getElementById(answerId).style.display === 'block') {
+                    document.getElementById(answerId).style.display = 'none';
+                    document.getElementById(this.id + '-toggle').textContent = '+';
+                } else {
+                    document.getElementById(answerId).style.display = 'block';
+                    document.getElementById(this.id + '-toggle').textContent = '-';
+                }
+            }
+
+            items.forEach(item => item.addEventListener('click', openCloseAnswer));
+        </script>
     </div>
 </body>
 

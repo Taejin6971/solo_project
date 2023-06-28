@@ -1,0 +1,74 @@
+aside #aside {
+    float: left;
+    /* position: fixed; */
+    float: left;
+    width: 220px;
+    padding-top: 130px;
+    /* border: 1px solid red; */
+}
+
+aside #asid_menu li {
+    /* background-color: white; */
+    /* border: 1px solid red; */
+    padding: 5px;
+    /* font-size: 20px; */
+    /* line-height: 40px; */
+}
+
+aside #second_benner {
+    /* border: 1px solid red; */
+}
+
+#aside .answer {
+    display: none;
+    /* padding-bottom: 30px; */
+}
+
+#aside #faq-title {
+    font-size: 25px;
+}
+
+#aside .faq-content {
+    border-bottom: 1px solid #e0e0e0;
+}
+
+#aside .question {
+    font-size: 19px;
+    padding: 10px 0;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    width: 100%;
+    text-align: left;
+}
+
+#aside .question:hover {
+    /* color: #2962ff; */
+}
+
+/* id 의 값에 뒷부분이 -toggle 인 모든것을 선택 */
+[id$="-toggle"] {
+    margin-right: 15px;
+}
+
+aside #kakao {
+    /* border: 1px solid red; */
+    background: url(../img/kakao_benner.png) no-repeat;
+    background-size: 220px;
+    height: 60px;
+    /* width: 235px; */
+    padding: 10px 0 0 50px;
+    font-weight: bold;
+}
+
+aside #facebook {
+    /* border: 1px solid red; */
+    background: url(../img/facebook_benner.png) no-repeat;
+    background-size: 220px;
+    height: 60px;
+    /* width: 235px; */
+    padding: 10px 0 0 50px;
+    font-weight: bold;
+    color: white;
+}
