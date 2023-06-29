@@ -13,70 +13,47 @@
 
     <style>
         main #main {
-            /* border: 1px solid red; */
+            border: 1px solid red;
             float: right;
             width: 1075px;
             /* height: 1000px */
             padding-top: 130px;
         }
 
-        main #main_benner img {
-            /* float: right; */
-            width: 100%;
-            margin-top: 5px
-        }
+        #item_pic {
+            border: 1px solid red;
+			float: left;
+            margin: 20px 20px auto 10px;
+            padding: 0;
+		}
 
-        main #new_products_box,
-        main #review_best_box {
-            /* border: 1px solid red; */
-        }
+		#item_pic>img {
+            width: 400px;
+		}
 
-        main #new_products_box #new_products,
-        main #review_best_box #review_best {
-            padding: 20px 0 5px 0;
-            font-size: 15px;
-            float: left;
-        }
+		#helmet {
+			box-shadow: 1px 1px 2px #eee;
+		}
 
-        main #new_products_box #new_products #new_products_text,
-        main #review_best_box #review_best #review_best_text {
-            color: red;
-        }
+		#small-pic {
+			margin-top: 20px;
+			list-style: none;
+			padding: 0;
+		}
 
-        #main #more {
-            float: right;
-            padding-top: 20px;
-            font-size: 15px;
-        }
+		#small-pic>li {
+			float: left;
+			margin-right: 10px;
+		}
 
-        #main #item_box {
-            padding: 20px;
-        }
+		.small {
+			width: 60px;
+			height: 60px;
+		}
 
-        #main #item {
-            float: left;
-            margin: 0 39px 10px 39px;
-        }
-
-        #main #item img {
-            width: 180px;
-        }
-
-        #main #item_name,
-        #main #item_info,
-        #main #item_price {
-            /* text-align: center; */
-        }
-
-        #main #item_info {
-            /* color: green; */
-            font-weight: bold;
-        }
-
-        #main #item_price {
-            font-weight: bold;
-            color: rgb(50, 50, 253);
-        }
+		#small-pic img:hover {
+			cursor: pointer;
+		}
     </style>
 </head>
 
@@ -271,163 +248,12 @@
 
         <main>
             <div id="main">
-                <div id="main_benner">
-                    <a href="#"><img src="img/main_benner.png"></a>
-                    <div class="clear"></div>
-                </div>
-                <div id="new_products_box">
-                    <div>
-                        <div id="new_products">
-                            <span id="new_products_text">NEW PRODUCTS</span> <span>신규 상품</span>
-                        </div>
-                        <div id="more"><a href="#">more</a></div>
-                        <div class="clear"></div>
-                        <div class="line"></div>
-                    </div>
-                    <div id="item_box">
-                        <a href="detail.html">
-                            <div id="item">
-                                <img id="item_img" src="img/item/item_01.png">
-                                <div id="item_name">샤크헬멧</div>
-                                <div id="item_info">RACE R PRO GP</div>
-                                <div id="item_price">1,490,000원</div>
-                            </div>
-                        </a>
-                        <a href="#">
-                            <div id="item">
-                                <img id="item_img" src="img/item/item13.png">
-                                <div id="item_name">넥스헬멧</div>
-                                <div id="item_info">SX. 100R FRENTIC</div>
-                                <div id="item_price">270,000원</div>
-                            </div>
-                        </a>
-                        <a href="#">
-                            <div id="item">
-                                <img id="item_img" src="img/item/item01.png">
-                                <div id="item_name">홍진헬멧</div>
-                                <div id="item_info">V10 SOLID</div>
-                                <div id="item_price">369,000원</div>
-                            </div>
-                        </a>
-                        <a href="#">
-                            <div id="item">
-                                <img id="item_img" src="img/item/item02.png">
-                                <div id="item_name">알파인스타자켓</div>
-                                <div id="item_info">T-GP PLUS R V3 </div>
-                                <div id="item_price">360,000원</div>
-                            </div>
-                        </a>
-                        <a href="#">
-                            <div id="item">
-                                <img id="item_img" src="img/item/item05.png">
-                                <div id="item_name">RS타이치장갑</div>
-                                <div id="item_info">RST448 ARMED MESH</div>
-                                <div id="item_price">119,000원</div>
-                            </div>
-                        </a>
-                        <a href="#">
-                            <div id="item">
-                                <img id="item_img" src="img/item/item03.png">
-                                <div id="item_name">알파인스타자켓</div>
-                                <div id="item_info">SMX-R SHORT GLOVES</div>
-                                <div id="item_price">120,000원</div>
-                            </div>
-                        </a>
-                        <a href="#">
-                            <div id="item">
-                                <img id="item_img" src="img/item/item06.png">
-                                <div id="item_name">어글리브로스바지</div>
-                                <div id="item_info">MOTO JOGGER</div>
-                                <div id="item_price">216,000원</div>
-                            </div>
-                        </a>
-                        <a href="#">
-                            <div id="item">
-                                <img id="item_img" src="img/item/item09.png">
-                                <div id="item_name">RS타이치장갑</div>
-                                <div id="item_info">RSU099 GRAFFII1</div>
-                                <div id="item_price">35,000원</div>
-                            </div>
-                        </a>
-                        <div class="clear"></div>
-                    </div>
-                </div>
-                <div id="review_best_box">
-                    <div>
-                        <div id="review_best">
-                            <span id="review_best_text">REVIEW BEST</span> <span>인기 상품</span>
-                        </div>
-                        <div id="more"><a href="#">more</a></div>
-                        <div class="clear"></div>
-                        <div class="line"></div>
-                    </div>
-                    <div id="item_box">
-                        <a href="#">
-                            <div id="item">
-                                <img id="item_img" src="img/item/item001.png">
-                                <div id="item_name">홍진헬멧</div>
-                                <div id="item_info">I30 VICOM</div>
-                                <div id="item_price">199,000원</div>
-                            </div>
-                        </a>
-                        <a href="#">
-                            <div id="item">
-                                <img id="item_img" src="img/item/item002.png">
-                                <div id="item_name">세나블루투스</div>
-                                <div id="item_info">50S-10 싱글팩</div>
-                                <div id="item_price">473,000원</div>
-                            </div>
-                        </a>
-                        <a href="#">
-                            <div id="item">
-                                <img id="item_img" src="img/item/item003.png">
-                                <div id="item_name">다이네즈자켓</div>
-                                <div id="item_info">HYDRAFLUX 2 AIR</div>
-                                <div id="item_price">440,000원</div>
-                            </div>
-                        </a>
-                        <a href="#">
-                            <div id="item">
-                                <img id="item_img" src="img/item/item004.png">
-                                <div id="item_name">알파인스타자켓</div>
-                                <div id="item_info">T-SP S SUPERAIR</div>
-                                <div id="item_price">260,000원</div>
-                            </div>
-                        </a>
-                        <div class="clear"></div>
-                        <a href="#">
-                            <div id="item">
-                                <img id="item_img" src="img/item/item005.png">
-                                <div id="item_name">랩마운트</div>
-                                <div id="item_info">RAM-B-149-PDA</div>
-                                <div id="item_price">75,000원</div>
-                            </div>
-                        </a>
-                        <a href="#">
-                            <div id="item">
-                                <img id="item_img" src="img/item/item006.png">
-                                <div id="item_name">랩마운트</div>
-                                <div id="item_info">RAM-B-408-37-PDA</div>
-                                <div id="item_price">82,000원</div>
-                            </div>
-                        </a>
-                        <a href="#">
-                            <div id="item">
-                                <img id="item_img" src="img/item/item007.png">
-                                <div id="item_name">알파인스타장갑</div>
-                                <div id="item_info">STELLA SMX-1 AIR V2</div>
-                                <div id="item_price">91,000원</div>
-                            </div>
-                        </a>
-                        <a href="#">
-                            <div id="item">
-                                <img id="item_img" src="img/item/item008.png">
-                                <div id="item_name">알파인스타장갑</div>
-                                <div id="item_info">MM93 RIO HONDO V2</div>
-                                <div id="item_price">110,000원</div>
-                            </div>
-                        </a>
-                        <div class="clear"></div>
+                <div id="item_pic">
+                    <img id="helmet" src="img/detail/detail1.png">
+                    <div id="small-pic">
+                        <img src="img/detail/detail1.png" class="small">
+                        <img src="img/detail/detail2.png" class="small">
+                        <img src="img/detail/detail3.png" class="small">
                     </div>
                 </div>
             </div>
@@ -510,7 +336,6 @@
 
         <script>
             const items = document.querySelectorAll('.aside_main_btn');
-
             function openCloseAnswer() {
                 const answerId = this.id.replace('main_btn', 'answer');
 
@@ -522,8 +347,20 @@
                     document.getElementById(this.id + '-toggle').textContent = '-';
                 }
             }
-
             items.forEach(item => item.addEventListener('click', openCloseAnswer));
+        </script>
+
+        <script>
+            let small = document.getElementsByClassName("small");
+            let helmet = document.getElementById("helmet");
+
+            for (let i = 0; i < small.length; i++) {
+                small[i].addEventListener("mouseover", showhelmet);
+            }
+
+            function showhelmet() {
+                helmet.setAttribute("src", this.getAttribute("src"));
+            }
         </script>
     </div>
 </body>

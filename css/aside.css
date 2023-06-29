@@ -28,15 +28,11 @@ aside #aside_box{
     /* padding-bottom: 30px; */
 }
 
-#aside #faq-title {
-    font-size: 25px;
-}
-
 #aside .faq-content {
     border-bottom: 1px solid #e0e0e0;
 }
 
-#aside .question {
+#aside .aside_main_btn {
     font-size: 19px;
     padding: 10px 0;
     cursor: pointer;
@@ -47,7 +43,7 @@ aside #aside_box{
     text-align: left;
 }
 
-#aside .question:hover {
+#aside .aside_main_btn:hover {
     /* color: #2962ff; */
 }
 

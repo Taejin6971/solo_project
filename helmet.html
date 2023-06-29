@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/aside.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/footer.css">
-    <title>main_page</title>
+    <title>helmet_page</title>
 
     <style>
         main #main {
@@ -20,42 +20,51 @@
             padding-top: 130px;
         }
 
-        main #main_benner img {
-            /* float: right; */
-            width: 100%;
-            margin-top: 5px
-        }
-
-        main #new_products_box,
-        main #review_best_box {
+        main #category {
             /* border: 1px solid red; */
+            padding: 20px 0 0 10px;
+            font-size: 15px;
+            font-weight: bold;
         }
 
-        main #new_products_box #new_products,
-        main #review_best_box #review_best {
-            padding: 20px 0 5px 0;
-            font-size: 15px;
+        main #category_list {
+            /* border: 1px solid red; */
+            padding: 20px;
+        }
+
+        main #brand_box {
+            /* border: 1px solid red; */
+            padding-bottom: 10px;
+        }
+
+        main #brand_name {
+            /* border: 1px solid red; */
             float: left;
+            width: 250px;
+            font-weight: bold;
         }
 
-        main #new_products_box #new_products #new_products_text,
-        main #review_best_box #review_best #review_best_text {
-            color: red;
+        main #brand_item>li {
+            display: inline-block;
+            margin-right: 10px;
         }
 
-        #main #more {
-            float: right;
-            padding-top: 20px;
-            font-size: 15px;
+        main #title {
+            /* border: 1px solid red; */
+            text-align: center;
+            /* font-weight: bold; */
+            font-size: 20px;
+            padding: 10px;
         }
 
         #main #item_box {
-            padding: 20px;
+            padding-top: 20px;
         }
 
         #main #item {
             float: left;
-            margin: 0 39px 10px 39px;
+            margin: 17px;
+            height: 260px;
         }
 
         #main #item img {
@@ -100,7 +109,7 @@
                 <div id="main_box">
                     <ul id="menu">
                         <li>
-                            <a href="helmet.html">HELMET</a>
+                            <a href="#">HELMET</a>
                             <ul id="submenu">
                                 <li><a href="helmet.html">오픈페이스</a></li>
                                 <li><a href="helmet.html">풀페이스</a></li>
@@ -271,160 +280,216 @@
 
         <main>
             <div id="main">
-                <div id="main_benner">
-                    <a href="#"><img src="img/main_benner.png"></a>
-                    <div class="clear"></div>
-                </div>
-                <div id="new_products_box">
-                    <div>
-                        <div id="new_products">
-                            <span id="new_products_text">NEW PRODUCTS</span> <span>신규 상품</span>
-                        </div>
-                        <div id="more"><a href="#">more</a></div>
-                        <div class="clear"></div>
-                        <div class="line"></div>
+                <div>
+                    <div id="category">
+                        | 헬멧 HELMET
                     </div>
+                    <div id="category_list">
+                        <div id="brand_box">
+                            <div id="brand_name"><a href="#">아라이 ARAI</a></div>
+                            <div>
+                                <ul id="brand_item">
+                                    <li>- |</li>
+                                    <li><a href="">풀페이스 헬멧</a></li>
+                                    <li>|</li>
+                                    <li><a href="">오픈페이스 헬멧</a></li>
+                                    <li>|</li>
+                                    <li><a href="">클래식 헬멧</a></li>
+                                    <li>|</li>
+                                    <li><a href="">오프로드 헬멧</a></li>
+                                    <li>|</li>
+                                    <li><a href="">쉴드 및 파츠</a></li>
+                                    <li>|</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="clear"></div>
+                        <div id="brand_box">
+                            <div id="brand_name"><a href="#">쇼에이 SHOEI</a></div>
+                            <div>
+                                <ul id="brand_item">
+                                    <li>- |</li>
+                                    <li><a href="">풀페이스 헬멧</a></li>
+                                    <li>|</li>
+                                    <li><a href="">오픈페이스 헬멧</a></li>
+                                    <li>|</li>
+                                    <li><a href="">시스템헬멧</a></li>
+                                    <li>|</li>
+                                    <li><a href="">클래식 헬멧</a></li>
+                                    <li>|</li>
+                                    <li><a href="">오프로드 헬멧</a></li>
+                                    <li>|</li>
+                                    <li><a href="">쉴드 및 파츠</a></li>
+                                    <li>|</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="clear"></div>
+                        <div id="brand_box">
+                            <div id="brand_name"><a href="#">에이지브이 AGV</a></div>
+                            <div>
+                                <ul id="brand_item">
+                                    <li>- |</li>
+                                    <li><a href="">풀페이스 헬멧</a></li>
+                                    <li>|</li>
+                                    <li><a href="">오픈페이스 헬멧</a></li>
+                                    <li>|</li>
+                                    <li><a href="">시스템헬멧</a></li>
+                                    <li>|</li>
+                                    <li><a href="">클래식 헬멧</a></li>
+                                    <li>|</li>
+                                    <li><a href="">쉴드 및 파츠</a></li>
+                                    <li>|</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="clear"></div>
+                        <div id="brand_box">
+                            <div id="brand_name"><a href="#">홍진 HJC</a></div>
+                            <div>
+                                <ul id="brand_item">
+                                    <li>- |</li>
+                                    <li><a href="">풀페이스 헬멧</a></li>
+                                    <li>|</li>
+                                    <li><a href="">오픈페이스 헬멧</a></li>
+                                    <li>|</li>
+                                    <li><a href="">시스템헬멧</a></li>
+                                    <li>|</li>
+                                    <li><a href="">클래식 헬멧</a></li>
+                                    <li>|</li>
+                                    <li><a href="">오프로드 헬멧</a></li>
+                                    <li>|</li>
+                                    <li><a href="">쉴드 및 파츠</a></li>
+                                    <li>|</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                    <div id="title">BEST SELLERS</div>
+                    <div id="item_box">
+                        <a href="#">
+                            <div id="item">
+                                <img id="item_img" src="img/helmet/item_02.png">
+                                <div id="item_name">쇼에이헬멧</div>
+                                <div id="item_info">Z-8 MM93 COLLECTION <BR>RUSH-TC-5-</div>
+                                <div id="item_price">860,000원</div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div id="item">
+                                <img id="item_img" src="img/helmet/item_03.png">
+                                <div id="item_name">홍진헬멧</div>
+                                <div id="item_info">R-PHA11 CARBON <BR>BLEER-MC-1-</div>
+                                <div id="item_price">996,000원</div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div id="item">
+                                <img id="item_img" src="img/helmet/item_04.png">
+                                <div id="item_name">SOL헬멧</div>
+                                <div id="item_info">SF-2M <BR>SOLID -MATT BLACK-</div>
+                                <div id="item_price">104,000원</div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div id="item">
+                                <img id="item_img" src="img/helmet/item_05.png">
+                                <div id="item_name">홍진헬멧</div>
+                                <div id="item_info">V30 <BR>SOLID -MATT BLACK-</div>
+                                <div id="item_price">185,000원</div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div id="item">
+                                <img id="item_img" src="img/helmet/item_06.png">
+                                <div id="item_name">빌트웰헬멧</div>
+                                <div id="item_info">BONANZA <BR>SOLID -MATT BLACK-</div>
+                                <div id="item_price">159,000원</div>
+                            </div>
+                        </a>
+                        <div class="clear"></div>
+                    </div>
+                    <div id="title">NEW ARRIVALS</div>
                     <div id="item_box">
                         <a href="detail.html">
                             <div id="item">
-                                <img id="item_img" src="img/item/item_01.png">
+                                <img id="item_img" src="img/helmet/item_01.png">
                                 <div id="item_name">샤크헬멧</div>
-                                <div id="item_info">RACE R PRO GP</div>
+                                <div id="item_info">RACE R PRO GP <BR>ZARCO CHAKRA-DVB-</div>
                                 <div id="item_price">1,490,000원</div>
                             </div>
                         </a>
                         <a href="#">
                             <div id="item">
-                                <img id="item_img" src="img/item/item13.png">
+                                <img id="item_img" src="img/helmet/item_10.png">
+                                <div id="item_name">엑스라이트헬멧</div>
+                                <div id="item_info">X-803 RS ULTRA-CARBON <BR>-MOTO GP 2023</div>
+                                <div id="item_price">930,000원</div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div id="item">
+                                <img id="item_img" src="img/helmet/item_11.png">
                                 <div id="item_name">넥스헬멧</div>
-                                <div id="item_info">SX. 100R FRENTIC</div>
-                                <div id="item_price">270,000원</div>
+                                <div id="item_info">X. WED 2 CARBON <BR>ZERO PRO</div>
+                                <div id="item_price">780,000원</div>
                             </div>
                         </a>
                         <a href="#">
                             <div id="item">
-                                <img id="item_img" src="img/item/item01.png">
-                                <div id="item_name">홍진헬멧</div>
-                                <div id="item_info">V10 SOLID</div>
-                                <div id="item_price">369,000원</div>
-                            </div>
-                        </a>
-                        <a href="#">
-                            <div id="item">
-                                <img id="item_img" src="img/item/item02.png">
-                                <div id="item_name">알파인스타자켓</div>
-                                <div id="item_info">T-GP PLUS R V3 </div>
+                                <img id="item_img" src="img/helmet/item_12.png">
+                                <div id="item_name">넥스헬멧</div>
+                                <div id="item_info">X. R3R <BR>HAGIBIS</div>
                                 <div id="item_price">360,000원</div>
                             </div>
                         </a>
                         <a href="#">
                             <div id="item">
-                                <img id="item_img" src="img/item/item05.png">
-                                <div id="item_name">RS타이치장갑</div>
-                                <div id="item_info">RST448 ARMED MESH</div>
-                                <div id="item_price">119,000원</div>
-                            </div>
-                        </a>
-                        <a href="#">
-                            <div id="item">
-                                <img id="item_img" src="img/item/item03.png">
-                                <div id="item_name">알파인스타자켓</div>
-                                <div id="item_info">SMX-R SHORT GLOVES</div>
-                                <div id="item_price">120,000원</div>
-                            </div>
-                        </a>
-                        <a href="#">
-                            <div id="item">
-                                <img id="item_img" src="img/item/item06.png">
-                                <div id="item_name">어글리브로스바지</div>
-                                <div id="item_info">MOTO JOGGER</div>
-                                <div id="item_price">216,000원</div>
-                            </div>
-                        </a>
-                        <a href="#">
-                            <div id="item">
-                                <img id="item_img" src="img/item/item09.png">
-                                <div id="item_name">RS타이치장갑</div>
-                                <div id="item_info">RSU099 GRAFFII1</div>
-                                <div id="item_price">35,000원</div>
-                            </div>
-                        </a>
-                        <div class="clear"></div>
-                    </div>
-                </div>
-                <div id="review_best_box">
-                    <div>
-                        <div id="review_best">
-                            <span id="review_best_text">REVIEW BEST</span> <span>인기 상품</span>
-                        </div>
-                        <div id="more"><a href="#">more</a></div>
-                        <div class="clear"></div>
-                        <div class="line"></div>
-                    </div>
-                    <div id="item_box">
-                        <a href="#">
-                            <div id="item">
-                                <img id="item_img" src="img/item/item001.png">
+                                <img id="item_img" src="img/helmet/item_13.png">
                                 <div id="item_name">홍진헬멧</div>
-                                <div id="item_info">I30 VICOM</div>
-                                <div id="item_price">199,000원</div>
+                                <div id="item_info">R-PHA 91 <BR>RAFINO -MC- 21</div>
+                                <div id="item_price">709,000원</div>
                             </div>
                         </a>
                         <a href="#">
                             <div id="item">
-                                <img id="item_img" src="img/item/item002.png">
-                                <div id="item_name">세나블루투스</div>
-                                <div id="item_info">50S-10 싱글팩</div>
-                                <div id="item_price">473,000원</div>
+                                <img id="item_img" src="img/helmet/item_14.png">
+                                <div id="item_name">홍진헬멧</div>
+                                <div id="item_info">V10 <BR> SOLID -DEEP RED-</div>
+                                <div id="item_price">369,000원</div>
                             </div>
                         </a>
                         <a href="#">
                             <div id="item">
-                                <img id="item_img" src="img/item/item003.png">
-                                <div id="item_name">다이네즈자켓</div>
-                                <div id="item_info">HYDRAFLUX 2 AIR</div>
-                                <div id="item_price">440,000원</div>
+                                <img id="item_img" src="img/helmet/item_15.png">
+                                <div id="item_name">홍진헬멧</div>
+                                <div id="item_info">V31 <BR>CARBON -BLACK-</div>
+                                <div id="item_price">369,000원</div>
                             </div>
                         </a>
                         <a href="#">
                             <div id="item">
-                                <img id="item_img" src="img/item/item004.png">
-                                <div id="item_name">알파인스타자켓</div>
-                                <div id="item_info">T-SP S SUPERAIR</div>
-                                <div id="item_price">260,000원</div>
-                            </div>
-                        </a>
-                        <div class="clear"></div>
-                        <a href="#">
-                            <div id="item">
-                                <img id="item_img" src="img/item/item005.png">
-                                <div id="item_name">랩마운트</div>
-                                <div id="item_info">RAM-B-149-PDA</div>
-                                <div id="item_price">75,000원</div>
+                                <img id="item_img" src="img/helmet/item_16.png">
+                                <div id="item_name">홍진헬멧</div>
+                                <div id="item_info">V31 <BR>BYRON -MC-1SF-</div>
+                                <div id="item_price">259,000원</div>
                             </div>
                         </a>
                         <a href="#">
                             <div id="item">
-                                <img id="item_img" src="img/item/item006.png">
-                                <div id="item_name">랩마운트</div>
-                                <div id="item_info">RAM-B-408-37-PDA</div>
-                                <div id="item_price">82,000원</div>
+                                <img id="item_img" src="img/helmet/item_17.png">
+                                <div id="item_name">홍진헬멧</div>
+                                <div id="item_info">V10 <BR>TAAMI -MC-5SF</div>
+                                <div id="item_price">419,000원</div>
                             </div>
                         </a>
                         <a href="#">
                             <div id="item">
-                                <img id="item_img" src="img/item/item007.png">
-                                <div id="item_name">알파인스타장갑</div>
-                                <div id="item_info">STELLA SMX-1 AIR V2</div>
-                                <div id="item_price">91,000원</div>
-                            </div>
-                        </a>
-                        <a href="#">
-                            <div id="item">
-                                <img id="item_img" src="img/item/item008.png">
-                                <div id="item_name">알파인스타장갑</div>
-                                <div id="item_info">MM93 RIO HONDO V2</div>
-                                <div id="item_price">110,000원</div>
+                                <img id="item_img" src="img/helmet/item_19.png">
+                                <div id="item_name">엑스라이트헬멧</div>
+                                <div id="item_info">X-803 RS ULTRA CARBON <BR>-A.RINS AUSTIN CARBON</div>
+                                <div id="item_price">930,000원</div>
                             </div>
                         </a>
                         <div class="clear"></div>
