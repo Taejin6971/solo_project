@@ -7,7 +7,7 @@ aside #aside {
     /* border: 1px solid red; */
 }
 
-aside #asid_menu li {
+aside #aside_menu li {
     /* background-color: white; */
     /* border: 1px solid red; */
     padding: 5px;
@@ -15,8 +15,12 @@ aside #asid_menu li {
     /* line-height: 40px; */
 }
 
-aside #second_benner {
+aside #aside_benner {
     /* border: 1px solid red; */
+}
+
+aside #aside_box{
+    padding-left: 10px;
 }
 
 #aside .answer {
