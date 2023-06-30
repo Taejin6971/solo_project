@@ -13,47 +13,119 @@
 
     <style>
         main #main {
-            border: 1px solid red;
+            /* border: 1px solid red; */
             float: right;
             width: 1075px;
             /* height: 1000px */
             padding-top: 130px;
         }
 
-        #item_pic {
-            border: 1px solid red;
-			float: left;
-            margin: 20px 20px auto 10px;
+        main #item_pic {
+            /* border: 1px solid red; */
+            float: left;
+            margin: 50px 0 0 50px;
             padding: 0;
-		}
+        }
 
-		#item_pic>img {
+        main #item_pic>img {
             width: 400px;
-		}
+        }
 
-		#helmet {
-			box-shadow: 1px 1px 2px #eee;
-		}
+        main #helmet {
+            box-shadow: 1px 1px 2px #eee;
+        }
 
-		#small-pic {
-			margin-top: 20px;
-			list-style: none;
-			padding: 0;
-		}
+        main #small_pic {
+            /* border: 1px solid red; */
+            margin-left: 15px;
+            /* margin-top: 20px; */
+            /* list-style: none; */
+            /* padding: 10px; */
+        }
 
-		#small-pic>li {
-			float: left;
-			margin-right: 10px;
-		}
+        main #small_pic .small {
+            /* border: 1px solid red; */
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+        }
 
-		.small {
-			width: 60px;
-			height: 60px;
-		}
+        main #small_pic img:hover {
+            cursor: pointer;
+        }
 
-		#small-pic img:hover {
-			cursor: pointer;
-		}
+        main #item_buytable {
+            /* border: 1px solid red; */
+            width: 600px;
+            float: right;
+            padding: 50px;
+        }
+
+        main #item_name {
+            font-size: 20px;
+            padding-bottom: 20px;
+        }
+        
+        main #item_name>span {
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        main #order_box {
+            border-top: 3px solid #888;
+            border-bottom: 3px solid #888;
+            width: 500px;
+            border-collapse: collapse;
+            line-height: 50px;
+        }
+
+        main #order_box #point {
+            color: rgb(36, 102, 255);
+            font-weight: bold;
+            font-size: 15px;
+        }
+
+        main #order_box #size>td {
+            border-top: 1px solid #888;
+            border-bottom: 1px solid #888;
+            width: 150px;
+            /* border: 1px solid red; */
+        }
+        
+        main #order_price {
+            border-bottom: 1px solid #888;
+            padding: 40px 0 20px 0;
+            font-size: 8px;
+        }
+
+        main #order_price>span {
+            color: rgb(36, 102, 255);
+            font-weight: bold;
+            font-size: 15px;
+        }
+
+        main #order_price>span #sub {
+            font-size: 8px;
+        }
+
+        main #buy_btn {
+            padding-top: 30px;
+            text-align: center;
+        }
+
+        main #buy_btn img {
+            padding: 5px;
+        }
+
+
+
+        main #item_info {
+            text-align: center;
+        }
+
+        main #item_info img {
+            width: 700px;
+        }
     </style>
 </head>
 
@@ -250,11 +322,65 @@
             <div id="main">
                 <div id="item_pic">
                     <img id="helmet" src="img/detail/detail1.png">
-                    <div id="small-pic">
+                    <div id="small_pic">
                         <img src="img/detail/detail1.png" class="small">
                         <img src="img/detail/detail2.png" class="small">
                         <img src="img/detail/detail3.png" class="small">
                     </div>
+                </div>
+                <div id="item_buytable">
+                    <div id="item_name">
+                        샤크헬멧 <br> <span>RACD R RPO <br> ZARCO CHAKARA -DVB-</span>
+                    </div>
+                    <table id="order_box">
+                        <tr>
+                            <td>제조사</td>
+                            <td>SHARK FRANCE</td>
+                        </tr>
+                        <tr id="point">
+                            <td>판매가</td>
+                            <td>1,490,000원</td>
+                        </tr>
+                        <tr>
+                            <td>적립금</td>
+                            <td>29,800 (2%)</td>
+                        </tr>
+                        <tr>
+                            <td>배송비</td>
+                            <td>3,000원 (70,000원 이상 구매시 무료)</td>
+                        </tr>
+                        <tr id="size">
+                            <td>사이즈 선택</td>
+                            <td id="item_option">
+                                <select name="size">
+                                    <option value="- [필수] 옵션을 선택해 주세요 -">
+                                        - [필수] 옵션을 선택해 주세요 -
+                                    </option>
+                                    <option value="S">S (56~57cm)</option>
+                                    <option value="M">M (58~59cm)</option>
+                                    <option value="L">L (60~61cm)</option>
+                                    <option value="XL">XL (62~63cm)</option>
+                                </select>
+                            </td>
+                        <tr>
+                            <td colspan="2">(최소주문수량 1개 이상)</td>
+                        </tr>
+                        </tr>
+                    </table>
+                    <div id="order_price">
+                        총 상품금액(수량) : <span>0 <span id="sub">(0)개</span></span>
+                    </div>
+                    <div id="buy_btn">
+                        <a href=""><img src="img/detail/buy_now.png"></a>
+                        <a href=""><img src="img/detail/cart.png"></a>
+                        <a href=""><img src="img/detail/wish.png"></a>
+                    </div>
+                </div>
+                <div class="clear"></div>
+                <div id="item_info">
+                    <img src="img/detail/info.png">
+                    <img src="img/detail/info2.png">
+                    <img src="img/detail/info3.png">
                 </div>
             </div>
         </main>
