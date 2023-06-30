@@ -20,62 +20,101 @@
             padding-top: 130px;
         }
 
-        main #main_benner img {
-            /* float: right; */
-            width: 100%;
-            margin-top: 5px
+        main #log {
+            text-align: right;
+            padding-top: 20px;
         }
 
-        main #new_products_box,
-        main #review_best_box {
+        main #log li {
+            display: inline-block;
+        }
+
+        main #category {
             /* border: 1px solid red; */
-        }
-
-        main #new_products_box #new_products,
-        main #review_best_box #review_best {
-            padding: 5px 0 5px 0;
+            padding: 20px 0 10px 0px;
             font-size: 15px;
-            float: left;
+            font-weight: bold;
         }
 
-        main #new_products_box #new_products #new_products_text,
-        main #review_best_box #review_best #review_best_text {
-            color: red;
+        main .line+div {
+            /* border: 1px solid red; */
+            width: 537.5px;
         }
 
-        #main #more {
-            float: right;
-            padding-top: 10px;
-            font-size: 15px;
-        }
-
-        #main #item_box {
-            padding: 20px;
-        }
-
-        #main #item {
-            float: left;
-            margin: 0 39px 10px 39px;
-        }
-
-        #main #item img {
-            width: 180px;
-        }
-
-        #main #item_name,
-        #main #item_info,
-        #main #item_price {
+        main #login_box {
+            /* border: 1px solid red; */
+            width: 370px;
             /* text-align: center; */
+            margin: 50px 0 0 100px;
+            float: left;
         }
 
-        #main #item_info {
-            /* color: green; */
-            font-weight: bold;
+        main #login_text {
+            float: left;
         }
 
-        #main #item_price {
-            font-weight: bold;
-            color: rgb(50, 50, 253);
+        main #login_text input {
+            height: 30px;
+            width: 250px;
+        }
+
+        main #login_btn input {
+            height: 60px;
+            width: 100px;
+            margin-left: 10px;
+            background-color: rgb(19, 17, 82);
+            color: white;
+            border-radius: 3px;
+        }
+
+        main #login_box #small {
+            padding: 5px 0 5px 0;
+        }
+
+        main #login_box #find li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+        main #login_box #find+.line {
+            margin-top: 40px;
+        }
+
+        main #mem_box {
+            margin-top: 10px;
+        }
+
+        main #dot {
+            /* border: 1px solid red; */
+            float: left;
+            width: 10px;
+            height: 20px;
+        }
+
+        main #dot+div {
+            /* border: 1px solid red; */
+            float: left;
+            width: 220px;
+        }
+
+        main #mem_btn button {
+            background-color: #888;
+            color: white;
+            width: 80px;
+            height: 20px;
+            font-size: 5px;
+            border-radius: 3px;
+            margin: 5px 0 0 45px;
+        }
+
+        main #sns_login {
+            margin-top: 20px;
+        }
+
+        main #login_logo img{
+            /* border: 1px solid red; */
+            width: 400px;
+            margin: 100px;
         }
     </style>
 </head>
@@ -85,28 +124,28 @@
         <header>
             <div id="header">
                 <div id="main_logo">
-                    <a href="#"><img src="img/main_logo.png"></a>
+                    <a href="index.html"><img src="img/main_logo.png"></a>
                 </div>
                 <div id="top_login">
                     <ul>
-                        <li><a href="#">LOGIN</a></li>
+                        <li><a href="login.html">LOGIN</a></li>
                         <li>|</li>
-                        <li><a href="">MYCART</a></li>
+                        <li><a href="#">MYCART</a></li>
                         <li>|</li>
-                        <li><a href="">MTPAGE</a></li>
+                        <li><a href="#">MTPAGE</a></li>
                     </ul>
                     <div class="clear"></div>
                 </div>
                 <div id="main_box">
                     <ul id="menu">
                         <li>
-                            <a href="#">HELMET</a>
+                            <a href="helmet.html">HELMET</a>
                             <ul id="submenu">
-                                <li><a href="#">오픈페이스</a></li>
-                                <li><a href="#">풀페이스</a></li>
-                                <li><a href="#">오프로드헬멧</a></li>
-                                <li><a href="#">시스템헬멧</a></li>
-                                <li><a href="#">헬멧 악세사리</a></li>
+                                <li><a href="helmet.html">오픈페이스</a></li>
+                                <li><a href="helmet.html">풀페이스</a></li>
+                                <li><a href="helmet.html">오프로드헬멧</a></li>
+                                <li><a href="helmet.html">시스템헬멧</a></li>
+                                <li><a href="helmet.html">헬멧 악세사리</a></li>
                             </ul>
                         </li>
                         <li>
@@ -169,21 +208,23 @@
         <aside>
             <div id="aside">
                 <div id="aside_box">
-                    <div class="faq-content">
-                        <button class="question" id="que-1"><span id="que-1-toggle">+</span><span>HELMET</span></button>
-                        <div class="answer" id="ans-1">
+                    <div class="aside_menu">
+                        <button class="aside_main_btn" id="main_btn-1"><span
+                                id="main_btn-1-toggle">+</span><span>HELMET</span></button>
+                        <div class="answer" id="answer-1">
                             <ul id="aside_menu">
-                                <li><a href="#">오픈페이스</a></li>
-                                <li><a href="#">풀페이스</a></li>
-                                <li><a href="#">오프로드헬멧</a></li>
-                                <li><a href="#">시스템헬멧</a></li>
-                                <li><a href="#">헬멧 악세사리</a></li>
+                                <li><a href="helmet.html">오픈페이스</a></li>
+                                <li><a href="helmet.html">풀페이스</a></li>
+                                <li><a href="helmet.html">오프로드헬멧</a></li>
+                                <li><a href="helmet.html">시스템헬멧</a></li>
+                                <li><a href="helmet.html">헬멧 악세사리</a></li>
                             </ul>
                         </div>
                     </div>
-                    <div class="faq-content">
-                        <button class="question" id="que-2"><span id="que-2-toggle">+</span><span>JACKET</span></button>
-                        <div class="answer" id="ans-2">
+                    <div class="aside_menu">
+                        <button class="aside_main_btn" id="main_btn-2"><span
+                                id="main_btn-2-toggle">+</span><span>JACKET</span></button>
+                        <div class="answer" id="answer-2">
                             <ul id="aside_menu">
                                 <li><a href="#">여름용 자켓</a></li>
                                 <li><a href="#">겨울용 자켓</a></li>
@@ -193,9 +234,10 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="faq-content">
-                        <button class="question" id="que-3"><span id="que-3-toggle">+</span><span>PANTS</span></button>
-                        <div class="answer" id="ans-3">
+                    <div class="aside_menu">
+                        <button class="aside_main_btn" id="main_btn-3"><span
+                                id="main_btn-3-toggle">+</span><span>PANTS</span></button>
+                        <div class="answer" id="answer-3">
                             <ul id="aside_menu">
                                 <li><a href="#">여름용 팬츠</a></li>
                                 <li><a href="#">겨울용 팬츠</a></li>
@@ -205,9 +247,10 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="faq-content">
-                        <button class="question" id="que-4"><span id="que-4-toggle">+</span><span>BOOTS</span></button>
-                        <div class="answer" id="ans-4">
+                    <div class="aside_menu">
+                        <button class="aside_main_btn" id="main_btn-4"><span
+                                id="main_btn-4-toggle">+</span><span>BOOTS</span></button>
+                        <div class="answer" id="answer-4">
                             <ul id="aside_menu">
                                 <li><a href="#">레이싱용 부츠</a></li>
                                 <li><a href="#">라이딩용 부츠</a></li>
@@ -217,9 +260,10 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="faq-content">
-                        <button class="question" id="que-5"><span id="que-5-toggle">+</span><span>GLOVES</span></button>
-                        <div class="answer" id="ans-5">
+                    <div class="aside_menu">
+                        <button class="aside_main_btn" id="main_btn-5"><span
+                                id="main_btn-5-toggle">+</span><span>GLOVES</span></button>
+                        <div class="answer" id="answer-5">
                             <ul id="aside_menu">
                                 <li><a href="#">봄/가을 글러브</a></li>
                                 <li><a href="#">여름용 글러브</a></li>
@@ -229,9 +273,10 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="faq-content">
-                        <button class="question" id="que-6"><span id="que-6-toggle">+</span><span>ACC</span></button>
-                        <div class="answer" id="ans-6">
+                    <div class="aside_menu">
+                        <button class="aside_main_btn" id="main_btn-6"><span
+                                id="main_btn-6-toggle">+</span><span>ACC</span></button>
+                        <div class="answer" id="answer-6">
                             <ul id="aside_menu">
                                 <li><a href="#">보호대</a></li>
                                 <li><a href="#">고글</a></li>
@@ -241,8 +286,8 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="faq-content">
-                        <button class="question" id="que-7"><span id="que-7-toggle"></span><span><a
+                    <div class="aside_menu">
+                        <button class="aside_main_btn" id="main_btn-7"><span id="main_btn-7-toggle"></span><span><a
                                     href="#">Q&A</a></span></button>
                     </div>
                 </div>
@@ -265,164 +310,58 @@
 
         <main>
             <div id="main">
-                <div id="main_benner">
-                    <a href="#"><img src="img/main_benner.png"></a>
+                <div id="log">
+                    <ul>
+                        <li><a href="index.html">홈</a></li>
+                        <li>></li>
+                        <li><a href="login.html">로그인</a></li>
+                    </ul>
+                </div>
+                <div id="category">
+                    | 로그인
+                </div>
+                <div class="line"></div>
+                <div id="login_box">
+                    <div id="login_text">
+                        <input type="text">
+                        <br>
+                        <input type="text">
+                    </div>
+                    <div id="login_btn">
+                        <input type="submit" value="로그인">
+                    </div>
                     <div class="clear"></div>
-                </div>
-                <div id="new_products_box">
-                    <div>
-                        <div id="new_products">
-                            <span id="new_products_text">NEW PRODUCTS</span> <span>신규 상품</span>
+                    <div id="small">
+                        <img src="img/login/보안접속.png">
+                    </div>
+                    <div id="find">
+                        <ul>
+                            <li><img src="img/login/닷.png"><a href="#">아이디찾기</a></li>
+                            <li><img src="img/login/닷.png"><a href="#">비밀번호찾기</a></li>
+                        </ul>
+                    </div>
+                    <div class="line"></div>
+                    <div id="mem_box">
+                        <div id="dot">
+                            <img src="img/login/부호.png">
                         </div>
-                        <div id="more"><a href="#">more</a></div>
-                        <div class="clear"></div>
-                        <div class="line"></div>
-                    </div>
-                    <div id="item_box">
-                        <a href="#">
-                            <div id="item">
-                                <img id="item_img" src="img/item/item04.png">
-                                <div id="item_name">넥스헬멧</div>
-                                <div id="item_info">X. WED 2 CARBON VALL</div>
-                                <div id="item_price">270,000원</div>
-                            </div>
-                        </a>
-                        <a href="#">
-                            <div id="item">
-                                <img id="item_img" src="img/item/item13.png">
-                                <div id="item_name">넥스헬멧</div>
-                                <div id="item_info">SX. 100R FRENTIC</div>
-                                <div id="item_price">20,000원</div>
-                            </div>
-                        </a>
-                        <a href="#">
-                            <div id="item">
-                                <img id="item_img" src="img/item/item01.png">
-                                <div id="item_name">홍진헬멧</div>
-                                <div id="item_info">V10 SOLID</div>
-                                <div id="item_price">369,000원</div>
-                            </div>
-                        </a>
-                        <a href="#">
-                            <div id="item">
-                                <img id="item_img" src="img/item/item02.png">
-                                <div id="item_name">알파인스타자켓</div>
-                                <div id="item_info">T-GP PLUS R V3 </div>
-                                <div id="item_price">360,000원</div>
-                            </div>
-                        </a>
-                        <a href="#">
-                            <div id="item">
-                                <img id="item_img" src="img/item/item05.png">
-                                <div id="item_name">RS타이치장갑</div>
-                                <div id="item_info">RST448 ARMED MESH</div>
-                                <div id="item_price">119,000원</div>
-                            </div>
-                        </a>
-                        <a href="#">
-                            <div id="item">
-                                <img id="item_img" src="img/item/item03.png">
-                                <div id="item_name">알파인스타자켓</div>
-                                <div id="item_info">SMX-R SHORT GLOVES</div>
-                                <div id="item_price">120,000원</div>
-                            </div>
-                        </a>
-                        <a href="#">
-                            <div id="item">
-                                <img id="item_img" src="img/item/item06.png">
-                                <div id="item_name">어글리브로스바지</div>
-                                <div id="item_info">MOTO JOGGER</div>
-                                <div id="item_price">216,000원</div>
-                            </div>
-                        </a>
-                        <a href="#">
-                            <div id="item">
-                                <img id="item_img" src="img/item/item09.png">
-                                <div id="item_name">RS타이치장갑</div>
-                                <div id="item_info">RSU099 GRAFFII1</div>
-                                <div id="item_price">35,000원</div>
-                            </div>
-                        </a>
-                        <div class="clear"></div>
-                    </div>
-                </div>
-                <div id="review_best_box">
-                    <div>
-                        <div id="review_best">
-                            <span id="review_best_text">REVIEW BEST</span> <span>인기 상품</span>
+                        <div>
+                            회원가입을 하시면 다양하고 특별한 <br>
+                            혜택이 준비되어 있습니다.
                         </div>
-                        <div id="more"><a href="#">more</a></div>
-                        <div class="clear"></div>
-                        <div class="line"></div>
+                        <div id="mem_btn">
+                            <a href="signin.html"><button>회원가입</button></a>
+                        </div>
                     </div>
-                    <div id="item_box">
-                        <a href="#">
-                            <div id="item">
-                                <img id="item_img" src="img/item/item001.png">
-                                <div id="item_name">홍진헬멧</div>
-                                <div id="item_info">I30 VICOM</div>
-                                <div id="item_price">199,000원</div>
-                            </div>
-                        </a>
-                        <a href="#">
-                            <div id="item">
-                                <img id="item_img" src="img/item/item002.png">
-                                <div id="item_name">세나블루투스</div>
-                                <div id="item_info">50S-10 싱글팩</div>
-                                <div id="item_price">473,000원</div>
-                            </div>
-                        </a>
-                        <a href="#">
-                            <div id="item">
-                                <img id="item_img" src="img/item/item003.png">
-                                <div id="item_name">다이네즈자켓</div>
-                                <div id="item_info">HYDRAFLUX 2 AIR</div>
-                                <div id="item_price">440,000원</div>
-                            </div>
-                        </a>
-                        <a href="#">
-                            <div id="item">
-                                <img id="item_img" src="img/item/item004.png">
-                                <div id="item_name">알파인스타자켓</div>
-                                <div id="item_info">T-SP S SUPERAIR</div>
-                                <div id="item_price">260,000원</div>
-                            </div>
-                        </a>
-                        <a href="#">
-                            <div id="item">
-                                <img id="item_img" src="img/item/item005.png">
-                                <div id="item_name">랩마운트</div>
-                                <div id="item_info">RAM-B-149-PDA</div>
-                                <div id="item_price">75,000원</div>
-                            </div>
-                        </a>
-                        <a href="#">
-                            <div id="item">
-                                <img id="item_img" src="img/item/item006.png">
-                                <div id="item_name">랩마운트</div>
-                                <div id="item_info">RAM-B-408-37-PDA</div>
-                                <div id="item_price">82,000원</div>
-                            </div>
-                        </a>
-                        <a href="#">
-                            <div id="item">
-                                <img id="item_img" src="img/item/item007.png">
-                                <div id="item_name">알파인스타장갑</div>
-                                <div id="item_info">STELLA SMX-1 AIR V2</div>
-                                <div id="item_price">91,000원</div>
-                            </div>
-                        </a>
-                        <a href="#">
-                            <div id="item">
-                                <img id="item_img" src="img/item/item008.png">
-                                <div id="item_name">알파인스타장갑</div>
-                                <div id="item_info">MM93 RIO HONDO V2</div>
-                                <div id="item_price">110,000원</div>
-                            </div>
-                        </a>
-                        <div class="clear"></div>
+                    <div id="sns_login">
+                        <a href="#"><img src="img/login/naver_login.png"></a>
+                        <a href="#"><img src="img/login/kakao_login.png"></a>
                     </div>
                 </div>
+                <div id="login_logo">
+                    <img src="img/main_logo.png">
+                </div>
+            </div>
         </main>
 
         <div class="clear"></div>
@@ -501,10 +440,9 @@
         </footer>
 
         <script>
-            const items = document.querySelectorAll('.question');
-
+            const items = document.querySelectorAll('.aside_main_btn');
             function openCloseAnswer() {
-                const answerId = this.id.replace('que', 'ans');
+                const answerId = this.id.replace('main_btn', 'answer');
 
                 if (document.getElementById(answerId).style.display === 'block') {
                     document.getElementById(answerId).style.display = 'none';
@@ -514,8 +452,20 @@
                     document.getElementById(this.id + '-toggle').textContent = '-';
                 }
             }
-
             items.forEach(item => item.addEventListener('click', openCloseAnswer));
+        </script>
+
+        <script>
+            let small = document.getElementsByClassName("small");
+            let helmet = document.getElementById("helmet");
+
+            for (let i = 0; i < small.length; i++) {
+                small[i].addEventListener("mouseover", showhelmet);
+            }
+
+            function showhelmet() {
+                helmet.setAttribute("src", this.getAttribute("src"));
+            }
         </script>
     </div>
 </body>

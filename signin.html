@@ -29,109 +29,64 @@
             display: inline-block;
         }
 
-        main #item_pic {
+        main #category {
             /* border: 1px solid red; */
+            padding: 20px 0 10px 0px;
+            font-size: 15px;
+            font-weight: bold;
+        }
+
+        main .line+div {
+            margin-top: 50px;
+        }
+
+        main span {
+            color: red;
+        }
+
+        main #bas {
             float: left;
-            margin: 50px 0 0 50px;
-            padding: 0;
+            font-size: 15px;
+            font-weight: bold;
         }
 
-        main #item_pic>img {
-            width: 400px;
-        }
-
-        main #helmet {
-            box-shadow: 1px 1px 2px #eee;
-        }
-
-        main #small_pic {
-            /* border: 1px solid red; */
-            margin-left: 15px;
-            /* margin-top: 20px; */
-            /* list-style: none; */
-            /* padding: 10px; */
-        }
-
-        main #small_pic .small {
-            /* border: 1px solid red; */
-            width: 100px;
-            height: 100px;
-            margin: 10px;
-        }
-
-        main #small_pic img:hover {
-            cursor: pointer;
-        }
-
-        main #item_buytable {
-            /* border: 1px solid red; */
-            width: 600px;
+        main #imp {
             float: right;
-            padding: 50px;
+            font-size: 8px;
         }
 
-        main #item_name {
-            font-size: 20px;
-            padding-bottom: 20px;
-        }
-        
-        main #item_name>span {
+        main #add_info {
+            font-size: 15px;
             font-weight: bold;
-            font-size: 20px;
         }
 
-        main #order_box {
-            border-top: 3px solid #888;
-            border-bottom: 3px solid #888;
-            width: 500px;
+        main table,
+        main td {
+            border: 1px solid #999;
             border-collapse: collapse;
-            line-height: 50px;
+            margin: 10px 0 50px 0;
         }
 
-        main #order_box #point {
-            color: rgb(36, 102, 255);
-            font-weight: bold;
-            font-size: 15px;
+        main table {
+            width: 100%;
         }
 
-        main #order_box #size>td {
-            border-top: 1px solid #888;
-            border-bottom: 1px solid #888;
+        main td {
+            height: 35px;
+            padding: 10px;
+        }
+
+        main table #f {
+            background-color: #f1f1f1;
+        }
+
+        main #sign_in_btn input {
+            float: right;
+            background-color: rgb(19, 17, 82);
+            color: white;
             width: 150px;
-            /* border: 1px solid red; */
-        }
-        
-        main #order_price {
-            border-bottom: 1px solid #888;
-            padding: 40px 0 20px 0;
-            font-size: 8px;
-        }
-
-        main #order_price>span {
-            color: rgb(36, 102, 255);
-            font-weight: bold;
-            font-size: 15px;
-        }
-
-        main #order_price>span #sub {
-            font-size: 8px;
-        }
-
-        main #buy_btn {
-            padding-top: 30px;
-            text-align: center;
-        }
-
-        main #buy_btn img {
-            padding: 5px;
-        }
-
-        main #item_info {
-            text-align: center;
-        }
-
-        main #item_info img {
-            width: 700px;
+            height: 50px;
+            margin: 0 0 0 15px;
         }
     </style>
 </head>
@@ -331,72 +286,156 @@
                     <ul>
                         <li><a href="index.html">홈</a></li>
                         <li>></li>
-                        <li><a href="helmet.html">헬멧 Helmet</a></li>
+                        <li><a href="login.html">회원가입</a></li>
                     </ul>
                 </div>
-                <div id="item_pic">
-                    <img id="helmet" src="img/detail/detail1.png">
-                    <div id="small_pic">
-                        <img src="img/detail/detail1.png" class="small">
-                        <img src="img/detail/detail2.png" class="small">
-                        <img src="img/detail/detail3.png" class="small">
-                    </div>
+                <div id="category">
+                    | 회원가입
                 </div>
-                <div id="item_buytable">
-                    <div id="item_name">
-                        샤크헬멧 <br> <span>RACD R RPO <br> ZARCO CHAKARA -DVB-</span>
-                    </div>
-                    <table id="order_box">
-                        <tr>
-                            <td>제조사</td>
-                            <td>SHARK FRANCE</td>
-                        </tr>
-                        <tr id="point">
-                            <td>판매가</td>
-                            <td>1,490,000원</td>
-                        </tr>
-                        <tr>
-                            <td>적립금</td>
-                            <td>29,800 (2%)</td>
-                        </tr>
-                        <tr>
-                            <td>배송비</td>
-                            <td>3,000원 (70,000원 이상 구매시 무료)</td>
-                        </tr>
-                        <tr id="size">
-                            <td>사이즈 선택</td>
-                            <td id="item_option">
-                                <select name="size">
-                                    <option value="- [필수] 옵션을 선택해 주세요 -">
-                                        - [필수] 옵션을 선택해 주세요 -
-                                    </option>
-                                    <option value="공백">=========================</option>
-                                    <option value="S">S (56~57cm)</option>
-                                    <option value="M">M (58~59cm)</option>
-                                    <option value="L">L (60~61cm)</option>
-                                    <option value="XL">XL (62~63cm)</option>
-                                </select>
-                            </td>
-                        <tr>
-                            <td colspan="2">(최소주문수량 1개 이상)</td>
-                        </tr>
-                        </tr>
-                    </table>
-                    <div id="order_price">
-                        총 상품금액(수량) : <span>0 <span id="sub">(0)개</span></span>
-                    </div>
-                    <div id="buy_btn">
-                        <a href=""><img src="img/detail/buy_now.png"></a>
-                        <a href=""><img src="img/detail/cart.png"></a>
-                        <a href=""><img src="img/detail/wish.png"></a>
-                    </div>
-                </div>
-                <div class="clear"></div>
-                <div id="item_info">
-                    <img src="img/detail/info4.png">
-                    <img src="img/detail/info.png">
-                    <img src="img/detail/info2.png">
-                    <img src="img/detail/info3.png">
+                <div class="line"></div>
+                <div>
+                    <div id="bas">기본정보</div>
+                    <div id="imp"><span>*</span>필수입력사항</div>
+                    <div class="clear"></div>
+                    <form action="request.do" name="sign_in" method="post">
+                        <table>
+                            <tr>
+                                <td id="f">아이디<span>*</span></td>
+                                <td><input type="text"> (영소문자/숫자,4~16자)</td>
+                            </tr>
+                            <tr>
+                                <td id="f">비밀번호<span>*</span></td>
+                                <td><input type="text"> (영문 대소문자/숫자/특수문자 중 2가지 이상 조합,8~16자)</td>
+                            </tr>
+                            <tr>
+                                <td id="f">비밀번호 확인<span>*</span></td>
+                                <td><input type="text"></td>
+                            </tr>
+                            <tr>
+                                <td id="f">비밀번호 확인질문<span>*</span></td>
+                                <td>
+                                    <select id="pwd_que">
+                                        <option>기억에 남는 추억의 장소는?</option>
+                                        <option>자신의 인생 좌우명은?</option>
+                                        <option>자신의 보물 제1호는?</option>
+                                        <option>가장 기억에 남는 선생님 성함은?</option>
+                                        <option>타인이 모르는 자신만의 신체비밀이 있다면?</option>
+                                        <option>추억하고 싶은 날짜가 있다면?</option>
+                                        <option>받았던 선물 중 기억에 남는 독특한 선물은?</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td id="f">비밀번호 확인 답변<span>*</span></td>
+                                <td id="ans"><input type="text"></td>
+                            </tr>
+                            <tr>
+                                <td id="f">이름<span>*</span></td>
+                                <td><input type="text"></td>
+                            </tr>
+                            <tr>
+                                <td id="f">주소<span>*</span></td>
+                                <td>
+                                    <input id="addr" type="text" size="5"><button>우편번호 ></button>
+                                    <p>
+                                        <input type="text" size="30">기본주소
+                                    <p>
+                                        <input type="text" size="30">나머지주소
+                                </td>
+                            </tr>
+                            <tr>
+                                <td id="f">일반전화</td>
+                                <td>
+                                    <select>
+                                        <option>
+                                            02
+                                        </option>
+                                    </select>
+                                    -
+                                    <input type="text" size="5">
+                                    -
+                                    <input type="text" size="5">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td id="f">휴대전화<span>*</span></td>
+                                <td>
+                                    <select>
+                                        <option>
+                                            010
+                                        </option>
+                                    </select>
+                                    -
+                                    <input type="text" size="5">
+                                    -
+                                    <input type="text" size="5">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td id="f">이메일<span>*</span></td>
+                                <td><input type="text"></td>
+                            </tr>
+                            <tr>
+                                <td id="f">성별<span>*</span></td>
+                                <td>
+                                    <input type="radio" name="sex" value="m">남자
+                                    <input type="radio" name="sex" value="w">여자
+                                </td>
+                            </tr>
+                            <tr>
+                                <td id="f">생년월일<span>*</span></td>
+                                <td>
+                                    <input type="text" size="2">년
+                                    <input type="text" size="1">월
+                                    <input type="text" size="1">일
+                                </td>
+                            </tr>
+                            <tr>
+                                <td id="f">자동차</td>
+                                <td>
+                                    <select style="width: 150px;">
+                                        <option>선택</option>
+                                        <option>없음</option>
+                                        <option>1000cc 이하</option>
+                                        <option>1000cc~1500cc 이하</option>
+                                        <option>1500cc~2000cc 이하</option>
+                                        <option>2000cc~3000cc 이하</option>
+                                        <option>3000cc~4000cc 이하</option>
+                                        <option>4000cc 이상</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td id="f">지역</td>
+                                <td>
+                                    <select style="width: 150px;">
+                                        <option>선택</option>
+                                        <option>서울</option>
+                                        <option>경기</option>
+                                        <option>인천</option>
+                                        <option>강원</option>
+                                        <option>충남</option>
+                                        <option>충북</option>
+                                        <option>대전</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td id="f">관심상품 <br>예: 헬멧,자켓 등</td>
+                                <td><input type="text" size="55"></td>
+                            </tr>
+                            <tr>
+                                <td id="f">관심차종</td>
+                                <td><input type="text" size="55"></td>
+                            </tr>
+                            <tr>
+                                <td id="sign_in_btn" colspan="2">
+                                    <input type="submit" value="회원가입">
+                                    <input type="reset" value="취소">
+                                </td>
+                            </tr>
+                        </table>
+                    </form>
                 </div>
             </div>
         </main>
