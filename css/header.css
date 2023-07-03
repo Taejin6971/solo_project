@@ -2,6 +2,7 @@ header #header {
     background-color: white;
     width: 1300px;
     position: absolute;
+    z-index: 2;
 }
 
 header #main_logo img {
