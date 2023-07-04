@@ -202,7 +202,7 @@
                     <div class="aside_menu">
                         <button class="aside_main_btn" id="main_btn-1"><span
                                 id="main_btn-1-toggle">+</span><span>HELMET</span></button>
-                        <div class="answer" id="answer-1">
+                        <div class="subbtn" id="subbtn-1">
                             <ul id="aside_menu">
                                 <li><a href="helmet.html">오픈페이스</a></li>
                                 <li><a href="helmet.html">풀페이스</a></li>
@@ -215,7 +215,7 @@
                     <div class="aside_menu">
                         <button class="aside_main_btn" id="main_btn-2"><span
                                 id="main_btn-2-toggle">+</span><span>JACKET</span></button>
-                        <div class="answer" id="answer-2">
+                        <div class="subbtn" id="subbtn-2">
                             <ul id="aside_menu">
                                 <li><a href="#">여름용 자켓</a></li>
                                 <li><a href="#">겨울용 자켓</a></li>
@@ -228,7 +228,7 @@
                     <div class="aside_menu">
                         <button class="aside_main_btn" id="main_btn-3"><span
                                 id="main_btn-3-toggle">+</span><span>PANTS</span></button>
-                        <div class="answer" id="answer-3">
+                        <div class="subbtn" id="subbtn-3">
                             <ul id="aside_menu">
                                 <li><a href="#">여름용 팬츠</a></li>
                                 <li><a href="#">겨울용 팬츠</a></li>
@@ -241,7 +241,7 @@
                     <div class="aside_menu">
                         <button class="aside_main_btn" id="main_btn-4"><span
                                 id="main_btn-4-toggle">+</span><span>BOOTS</span></button>
-                        <div class="answer" id="answer-4">
+                        <div class="subbtn" id="subbtn-4">
                             <ul id="aside_menu">
                                 <li><a href="#">레이싱용 부츠</a></li>
                                 <li><a href="#">라이딩용 부츠</a></li>
@@ -254,7 +254,7 @@
                     <div class="aside_menu">
                         <button class="aside_main_btn" id="main_btn-5"><span
                                 id="main_btn-5-toggle">+</span><span>GLOVES</span></button>
-                        <div class="answer" id="answer-5">
+                        <div class="subbtn" id="subbtn-5">
                             <ul id="aside_menu">
                                 <li><a href="#">봄/가을 글러브</a></li>
                                 <li><a href="#">여름용 글러브</a></li>
@@ -267,7 +267,7 @@
                     <div class="aside_menu">
                         <button class="aside_main_btn" id="main_btn-6"><span
                                 id="main_btn-6-toggle">+</span><span>ACC</span></button>
-                        <div class="answer" id="answer-6">
+                        <div class="subbtn" id="subbtn-6">
                             <ul id="aside_menu">
                                 <li><a href="#">보호대</a></li>
                                 <li><a href="#">고글</a></li>
@@ -432,18 +432,18 @@
 
         <script>
             const items = document.querySelectorAll('.aside_main_btn');
-            function openCloseAnswer() {
-                const answerId = this.id.replace('main_btn', 'answer');
+            function openClosesubbtn() {
+                const subbtnId = this.id.replace('main_btn', 'subbtn');
 
-                if (document.getElementById(answerId).style.display === 'block') {
-                    document.getElementById(answerId).style.display = 'none';
+                if (document.getElementById(subbtnId).style.display === 'block') {
+                    document.getElementById(subbtnId).style.display = 'none';
                     document.getElementById(this.id + '-toggle').textContent = '+';
                 } else {
-                    document.getElementById(answerId).style.display = 'block';
+                    document.getElementById(subbtnId).style.display = 'block';
                     document.getElementById(this.id + '-toggle').textContent = '-';
                 }
             }
-            items.forEach(item => item.addEventListener('click', openCloseAnswer));
+            items.forEach(item => item.addEventListener('click', openClosesubbtn));
         </script>
 
         <script>
